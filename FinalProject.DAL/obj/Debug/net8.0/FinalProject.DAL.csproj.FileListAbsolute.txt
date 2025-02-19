@@ -1,0 +1,12 @@
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\bin\Debug\net8.0\FinalProject.DAL.deps.json
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\bin\Debug\net8.0\FinalProject.DAL.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\bin\Debug\net8.0\FinalProject.DAL.pdb
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.csproj.AssemblyReference.cache
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.AssemblyInfoInputs.cache
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.AssemblyInfo.cs
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\refint\FinalProject.DAL.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.pdb
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\ref\FinalProject.DAL.dll

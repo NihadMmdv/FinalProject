@@ -1,0 +1,15 @@
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\bin\Debug\net8.0\FinalProject.Service.deps.json
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\bin\Debug\net8.0\FinalProject.Service.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\bin\Debug\net8.0\FinalProject.Service.pdb
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\bin\Debug\net8.0\FinalProject.DAL.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\bin\Debug\net8.0\FinalProject.DAL.pdb
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.csproj.AssemblyReference.cache
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.AssemblyInfoInputs.cache
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.AssemblyInfo.cs
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalPro.7A64942C.Up2Date
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\refint\FinalProject.Service.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\FinalProject.Service.pdb
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.Service\obj\Debug\net8.0\ref\FinalProject.Service.dll

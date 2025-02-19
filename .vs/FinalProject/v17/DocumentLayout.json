@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C4C7395-7A00-4354-97B7-5B32F31186BD}|FinalProject.App\\FinalProject.App.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C4C7395-7A00-4354-97B7-5B32F31186BD}|FinalProject.App\\FinalProject.App.csproj|solutionrelative:finalproject.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\services\\telegram\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\services\\telegram\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\extensions\\uploadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\extensions\\uploadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C4C7395-7A00-4354-97B7-5B32F31186BD}|FinalProject.App\\FinalProject.App.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.app\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C4C7395-7A00-4354-97B7-5B32F31186BD}|FinalProject.App\\FinalProject.App.csproj|solutionrelative:finalproject.app\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\services\\implementations\\settingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\services\\implementations\\settingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\shopvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\shopvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\settingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\settingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\servicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\servicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\infovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\infovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\contactvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\contactvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|c:\\users\\lenovo 2024\\desktop\\code academy\\finalproject\\finalproject.service\\viewmodels\\bookpurchasevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFA5D6F7-E4CD-4911-A1C4-09A2AD237E17}|FinalProject.Service\\FinalProject.Service.csproj|solutionrelative:finalproject.service\\viewmodels\\bookpurchasevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\Program.cs",
+              "RelativeDocumentMoniker": "FinalProject.App\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\Program.cs",
+              "RelativeToolTip": "FinalProject.App\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAqwC4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:40:53.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "FinalProject.App\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\appsettings.Development.json",
+              "RelativeToolTip": "FinalProject.App\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T22:39:49.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UploadFile.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\Extensions\\UploadFile.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\Extensions\\UploadFile.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\Extensions\\UploadFile.cs",
+              "RelativeToolTip": "FinalProject.Service\\Extensions\\UploadFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:33:15.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelegramBot.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\Services\\Telegram\\TelegramBot.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\Services\\Telegram\\TelegramBot.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\Services\\Telegram\\TelegramBot.cs",
+              "RelativeToolTip": "FinalProject.Service\\Services\\Telegram\\TelegramBot.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAcwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:31:35.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SettingService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\Services\\Implementations\\SettingService.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\Services\\Implementations\\SettingService.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\Services\\Implementations\\SettingService.cs",
+              "RelativeToolTip": "FinalProject.Service\\Services\\Implementations\\SettingService.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAtwKMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:29:41.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShopVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\ShopVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\ShopVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\ShopVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\ShopVM.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAApwAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:29:36.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SettingVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\SettingVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\SettingVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\SettingVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\SettingVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:29:30.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\ServiceVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\ServiceVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\ServiceVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\ServiceVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:29:22.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InfoVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\InfoVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\InfoVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\InfoVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\InfoVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:29:14.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\HomeVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\HomeVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\HomeVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\HomeVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:29:07.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContactVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\ContactVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\ContactVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\ContactVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\ContactVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:28:57.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookPurchaseVM.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\BookPurchaseVM.cs",
+              "RelativeDocumentMoniker": "FinalProject.Service\\ViewModels\\BookPurchaseVM.cs",
+              "ToolTip": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.Service\\ViewModels\\BookPurchaseVM.cs",
+              "RelativeToolTip": "FinalProject.Service\\ViewModels\\BookPurchaseVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:28:49.59Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
