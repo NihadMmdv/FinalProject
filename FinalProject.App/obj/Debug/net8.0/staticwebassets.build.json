@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Id9gLzmDVrvdJ90SO48DZNJNzUGW4Ltl2cCYmp/8Qew=",
+  "Hash": "fAGJIxrTJ1X8P/m2Vk4pw1PLAgGriGM8B3vCq1M2Yls=",
   "Source": "FinalProject.App",
   "BasePath": "_content/FinalProject.App",
   "Mode": "Default",
@@ -5867,6 +5867,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\header.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\nihad.jpg",
+      "SourceId": "FinalProject.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\",
+      "BasePath": "_content/FinalProject.App",
+      "RelativePath": "Images/nihad.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\nihad.jpg"
     },
     {
       "Identity": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\serviceSection.jpg",

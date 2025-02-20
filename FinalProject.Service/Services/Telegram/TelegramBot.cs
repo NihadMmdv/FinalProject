@@ -1,28 +1,22 @@
 ﻿using System;
+using System.Data;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
-using FinalProject.Service.Services.Interfaces;
-using Microsoft.Data.SqlClient;
 
-namespace FinalProject.Service.Services.Implementations
+namespace FinalProject.Service.Services.Telegram
 {
-    public class TelegramBotService : ITelegramBotService
+    public static class TelegramBot
     {
-        private readonly IConfiguration _configuration;
         private static string _connectionString;
 
-        public TelegramBotService(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
-
-        public async Task StartBotAsync(IConfiguration configuration)
+        public static async Task StartBotAsync(IConfiguration configuration)
         {
             string botToken = configuration["TelegramBotToken"] ?? throw new ArgumentNullException("Bot token is missing");
             _connectionString = configuration.GetConnectionString("Default") ?? throw new ArgumentNullException("Connection string is missing");
@@ -40,10 +34,11 @@ namespace FinalProject.Service.Services.Implementations
 
             var me = await botClient.GetMeAsync();
             Console.WriteLine($"Bot started: @{me.Username}");
-            await Task.Delay(Timeout.Infinite, cts.Token);
+            Console.ReadLine();
+            cts.Cancel();
         }
 
-        private async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
+        private static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
             if (update.Message is not { } message || string.IsNullOrEmpty(message.Text)) return;
             var chatId = message.Chat.Id;
@@ -119,7 +114,7 @@ namespace FinalProject.Service.Services.Implementations
             await botClient.SendTextMessageAsync(chatId, text, cancellationToken: cancellationToken);
         }
 
-        private Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
+        private static Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
         {
             Console.WriteLine(exception switch
             {

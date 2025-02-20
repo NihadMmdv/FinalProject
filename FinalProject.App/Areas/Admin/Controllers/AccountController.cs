@@ -116,9 +116,9 @@ namespace FinalProject.App.Areas.Admin.Controllers
         //    {
         //        Name = "SuperAdmin",
         //        Surname = "SuperAdmin",
-        //        Email = "superadmin@FinalProject.com",
+        //        Email = "superadmin@TurboBid.com",
         //        UserName = "SuperAdmin",
-        //        Image = "fbcfba13-c108-4de8-ba04-dd8372b1fa78nijat.jpg",
+        //        Image = "nihad.jpg",
         //        CountryId = 1,
         //        UserPricingId = 3,
         //        EmailConfirmed = true
@@ -128,9 +128,9 @@ namespace FinalProject.App.Areas.Admin.Controllers
         //    {
         //        Name = "Admin",
         //        Surname = "Admin",
-        //        Email = "admin@FinalProject.com",
+        //        Email = "admin@TurboBid.com",
         //        UserName = "Admin",
-        //        Image  = "fbcfba13-c108-4de8-ba04-dd8372b1fa78nijat.jpg",
+        //        Image  = "nihad.jpg",
         //        CountryId = 1,
         //        UserPricingId = 3,
         //        EmailConfirmed = true
