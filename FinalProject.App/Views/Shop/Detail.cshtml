@@ -1,0 +1,403 @@
+﻿@model ShopVM
+@section Title
+    {
+    @Model.Car.Model.Brand.Name @Model.Car.Model.Name @Model.Car.FabricationYear
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["Message"]))
+{
+    <div style="display:none;" id="messageFormat">
+        @TempData["Message"]
+    </div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["Success"]))
+{
+    <div style="display:none;" id="success">
+        @TempData["Success"]
+    </div>
+}
+<div class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>@Model.Car.Model.Brand.Name @Model.Car.Model.Name @Model.Car.FabricationYear</h1>
+                <div class="line"></div>
+                <span> General Info About Car </span>
+                <div class="pages">
+                    <ul>
+                        <li>
+                            <a asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li><i class="fa fa-dot-circle-o"></i></li>
+                        <li>
+                            <a style="color: #f4c23d;" asp-action="index" asp-controller="shop">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="car-detail section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="product-container">
+                    <div class="product">
+                        <div>
+                            <div class="content">
+                                <h1>@Model.Car.Model.Brand.Name @Model.Car.Model.Name</h1>
+                                <p class="price">
+                                    <span>$@Model.Car.Price.ToString("#,##0")</span>
+                                </p>
+                            </div>
+                            <div class="gallery">
+                                <div class="swiper-container gallery-slider">
+                                    <div class="swiper-wrapper">
+                                               @foreach (var item in @Model.Car.CarImages.Where(x=>!x.IsDeleted))
+                                        {
+                                            <div class="swiper-slide"><img src="~/Images/Cars/@item.Image" alt=""></div>
+
+                                        }
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="swiper-container gallery-thumbs">
+                                    <div class="swiper-wrapper">
+                                        @foreach (var item in @Model.Car.CarImages.Where(x => !x.IsDeleted))
+                                        {
+                                            <div class="swiper-slide"><img src="~/Images/Cars/@item.Image" alt=""></div>
+
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                               
+                        </div>
+                        <div class="tabs">
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="return false;">Description</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">Additional information</a>
+                                </li>
+                                <li>
+                                    @if(Model.Comments is null)
+                                    {
+                                        <a href="#" onclick="return false;">Reviews (0)</a>
+
+                                    }
+                                    else{
+                                    <a href="#" onclick="return false;">Reviews (@Model.Comments.Count())</a>
+                                    }
+                                </li>
+                            </ul>
+                            <div class="description info">
+                                <h2>Description</h2>
+                                <section class="kc-row">
+                                    <div class="row-container">
+                                        <div class="wrap-columns">
+                                            <div class="kc-column">
+                                                <div>
+                                                    <div class="text" style="word-wrap:break-word;">
+                                                        <p>
+                                                      @Model.Car.Description.Substring(0,250)
+                                                        </p>
+                                                        <p>
+                                                            @Model.Car.Description.Substring(250,Model.Car.Description.Length-250)
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="kc-row-inner">
+                                                        <div class="kc-column-inner">
+                                                            <div class="text">
+                                                                <h4>Enterainment</h4>
+                                                                <ul>
+                                                                    <li>Central Locking</li>
+                                                                    <li>Automatic Air Conditioning</li>
+                                                                    <li>Full Leather Interior</li>
+                                                                    <li>Electric Heated Seats</li>
+                                                                    <li>Navigation GPS Multimedia</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="kc-column-inner">
+                                                            <div class="text">
+                                                                <h4>Exterior features</h4>
+                                                                <ul>
+                                                                    <li>Parking Sensors</li>
+                                                                    <li>Double Exhaust</li>
+                                                                    <li>Electric Mirrors</li>
+                                                                    <li>Manifacturing Year 2015</li>
+                                                                    <li>Full Service History</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="kc-column-inner">
+                                                            <div class="text">
+                                                                <h4>Interior features</h4>
+                                                                <ul>
+                                                                    <li>ABS</li>
+                                                                    <li>Xenon Headlights</li>
+                                                                    <li>Immobilizer</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="additional info">
+                                <h2>Additional information</h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Car Types</th>
+                                            <td><p>@Model.Car.Ban.Name</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Color</th>
+                                            <td><p>@Model.Car.Color.Name</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Makes</th>
+                                            <td><p>@Model.Car.Model.Brand.Name</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Car Model</th>
+                                            <td><p>@Model.Car.Model.Name</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel</th>
+                                            <td><p>@Model.Car.Fuel.Name</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="reviews info">
+                                <div class="comments">
+                                    <h2>Reviews</h2>
+                                    @if (Model.Comments.Count() == 0)
+                                    {
+                                        <p>There are no reviews yet.</p>
+                                    }
+                                </div>
+                                <div class="review-form">
+                                    <div>
+                                            @if (Model.Comments.Count() ==0)
+                                    {
+                                        <h3>Be the first to review “@Model.Car.Model.Brand.Name @Model.Car.Model.Name”</h3>
+                                    }
+                                        <form>
+                                            <p>
+                                                <span id="email-notes">
+                                                    Your email address will not be published.
+                                                    Required fields are marked *
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <input 
+                                                       style="display:none;"
+                                                       name="carID"
+                                                       value="@Model.Car.Id"
+                                                       class="carComment"
+                                                       aria-required="true" />
+                                            </p>
+                                            <p>
+                                                <input placeholder="Subject"
+                                                       type="text"
+                                                       size="30"
+                                                       class="subjectComment"
+                                                       aria-required="true" />
+                                            </p>
+                                            <p>
+                                                <textarea placeholder="Your Review"
+                                                          cols="45"
+                                                          name ="text"
+                                                          rows="8"
+                                                          class="textComment"
+                                                          aria-required="true"></textarea>
+                                            </p>
+                                            <p>
+                                                <button class="carCommentBtn">Submit</button>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="empty" style="height:max-content">
+                                        <h2>Comments</h2>
+                                        @foreach (var item in Model.Comments)
+                                        {
+                                            <div class="comment">
+                                                <img src="~/Images/Users/@item.AppUser.Image" />
+                                                <div>
+                                                    <div class="comment-info">
+                                                        <h4>@item.AppUser.Name @item.AppUser.Surname</h4>
+                                                        <span>@item.CreatedAt.ToShortDateString()</span>
+                                                    </div>
+                                                    <span>@item.Subject</span>
+                                                    <span>@item.Text</span>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="detail">
+                    <div class="head">
+                        <h4>VEHICLE DETAILS</h4>
+                    </div>
+                    <div class="infoCar">
+                        <ul>
+                            <li class="auctionDate" style="display:none;">@Model.Car.ActionDate</li>
+                            <li class="timeforAuction"><span>Time Left:</span><span>0D 0H 00min 00sec</span></li>
+                            <li><span>Vin:</span>@Model.Car.Vin</li>
+                            <li><span>Make:</span>@Model.Car.Model.Brand.Name</li>
+                            <li><span>Model:</span>@Model.Car.Model.Name</li>
+                            <li><span>Fabrication Year:</span>@Model.Car.FabricationYear</li>
+                            <li><span>Odometer:</span>@Model.Car.Odometer.ToString("#,##0")km</li>
+                            <li><span>Fuel Type:</span>@Model.Car.Fuel.Name</li>
+                            <li><span>No. of Gears:</span>@Model.Car.NoGears</li>
+                            <li><span>Transmission:</span>@Model.Car.Transmission</li>
+                            @if(Model.Car.Color.Name != "White")
+                            {
+                                <li style="color:@Model.Car.Color.Name"><span>Color:</span>&#11044; @Model.Car.Color.Name</li>
+                            }
+                            else
+                            {
+                                    <li><span>Color:</span>@Model.Car.Color.Name</li>
+                            }
+                            <li><span>Fuel Economy:</span>@Model.Car.FuelCity l/City - @Model.Car.FuelWay l/hwy</li>
+                            <li><span>Motor:</span>@Model.Car.Motor</li>
+                            <li>
+                                <span>Country of Origin:</span>@Model.Country.Name
+                            </li>
+                            <li><span>Price:</span>$@Model.Car.Price.ToString("#,##0")</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="enquiry">
+                    <div class="head">
+                        <h4>VEHICLE ENQUIRY</h4>
+                    </div>
+                    <div class="contact-form">
+                        <form asp-controller="contact" asp-action="sendemail" method="post">
+                            <p>
+                                The dealer's details will be emailed to you
+                                immediately after you submit your query.
+                            </p>
+                            <p>
+                                <label>
+                                    <input 
+                                           size="40"
+                                           name="appUserId"
+                                           value="@Model.Car.AppUserId"
+                                           style="display:none"
+                                            />
+                                </label>
+                                <label>
+                                    <input type="text"
+                                           size="40"
+                                           aria-required="true"
+                                           aria-invalid="false"
+                                           name="firstname"
+                                           placeholder="Your Name" />
+                                </label>
+                                <label>
+                                    <input type="email"
+                                           size="40"
+                                           aria-required="true"
+                                           aria-invalid="false"
+                                           name="email"
+                                           placeholder="Your Email" />
+                                </label>
+                                <label>
+                                    <input type="text"
+                                           size="40"
+                                           name="phone"
+                                           aria-required="true"
+                                           aria-invalid="false"
+                                           placeholder="Your Phone Number" />
+                                </label>
+                                <label>
+                                    <textarea cols="40"
+                                              rows="10"
+                                              name="text"
+                                              aria-invalid="false"
+                                              placeholder="Message..."></textarea>
+                                </label>
+                            </p>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                                <span></span>
+                                <i class="fa fa-paper-plane"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="auction">
+                        <div class="circle"></div>
+                        <div class="bid">
+                            <input type="text" disabled value="$3,600" />
+                            <div class="buttons">
+                                <button>-</button>
+                                <button>+</button>
+                            </div>
+                            <button id="bidButton" type="submit">Bid</button>
+                            <audio id="audio" src="~/Audio/click.wav"></audio>
+                            <audio id="audioWin" src="~/Audio/win.mp3"></audio>
+                            <audio id="winnerAuction" src="~/Audio/winnerAuction.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="subhead">
+                        <h4>Contact the Seller</h4>
+                        <div class="number">
+                            <h6>Email : @Model.Car.AppUser.Email</h6>
+                            CAR CODE:
+                            <span>@Model.Car.Id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="feature-listing section">
+    <div class="kc-row-container">
+        <div class="kc-wrap-columns">
+            <div class="feature-column col-sm-12">
+                <div>
+                    <div class="header">
+                        <h2>Recent Vehicles</h2>
+                        <span>
+                            You can sell and buy new cars from auctions!
+                        </span>
+                        <div class="dec">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="line-dec"></div>
+                    </div>
+                    <div class="cars">
+                        <div class="cars-container">
+                            @await Html.PartialAsync("_Car", Model.Cars.Take(4))
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="~/JavaScript/shop-detail.js"></script>
+<script src="~/JavaScript/spinner.js"></script>

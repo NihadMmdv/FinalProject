@@ -1037,6 +1037,23 @@ namespace FinalProject.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Settings");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "address",
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "email",
+                            IsDeleted = false,
+                            Logo = "default.jpg",
+                            LogoUrl = "logourl",
+                            Phone1 = "1234567890",
+                            Phone2 = "8734567890",
+                            PhotoWhy = "default.jpg",
+                            PhotoWhyUrl = "photowhyurl",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("FinalProject.DAL.Entities.Slider", b =>

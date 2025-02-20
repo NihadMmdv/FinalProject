@@ -1,0 +1,179 @@
+﻿@model BlogVM
+@section Title
+    {
+  @Model.Blog.Title
+}
+<div class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Our Blogs</h1>
+                <div class="line"></div>
+                <span>
+                    You can read blogs and write your opinion!
+                </span>
+                <div class="pages">
+                    <ul>
+                        <li>
+                            <a asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li><i class="fa fa-dot-circle-o"></i></li>
+                        <li>
+                            <a style="color: #f4c23d;" asp-action="index" asp-controller="blog">Detail</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="blog-page section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 main-block">
+                <div class="blog-item">
+                    <a href="#">
+                        <img src="~/Images/Blogs/@Model.Blog.Image" alt="" />
+                    </a>
+                    <div class="content">
+                        <div class="info">
+                            <ul>
+                                <li>@Model.Blog.CreatedAt.Day/@Model.Blog.CreatedAt.Month/@Model.Blog.CreatedAt.Year</li>
+                                <li>
+                                    Posted by
+                                    <a href="#">@Model.Blog.Author</a>
+                                </li>
+                            </ul>
+                            <div class="title">
+                                <a href="#">
+                                    <h2>@Model.Blog.Title</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            @if (Model.Blog.Description.Length >= 250)
+                            {
+                                <p>
+                                    @Model.Blog.Description.Substring(0,250)...
+                                </p>
+                                <h6>Loads of Safety Tech Standard, More Available</h6>
+                                <p>
+                                    @Model.Blog.Description.Substring(250,Model.Blog.Description.Length-250)
+
+                                </p>
+                            }
+                            else
+                            {
+                                <p>
+                                    @Model.Blog.Description...
+                                </p>
+                            }
+
+                            <blockquote>
+                                <p>
+                                   @Model.Blog.Comment
+                                </p>
+                            </blockquote>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="share-button">
+                        <a href="#">Share Post</a>
+                    </div>
+                    <img style="width:55px;height:55px;" src="~/Images/Blogs/Authors/@Model.Blog.AuthorImage" alt="" />
+                    <span>written by</span>
+                    <h4 class="author-name">@Model.Blog.Author</h4>
+                </div>
+                <div class="leave-comment">
+                    <div>
+                        <h2>Leave a comment</h2>
+                        <form  class="leave-comment-form row">
+                            <div class="col-md-6">
+                                <input type="text" name="blogId" class="blogComment" hidden value="@Model.Blog.Id"/>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" name="subject" class="subjectComment" placeholder="Subject" />
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="text" class="textComment" placeholder="Your message here..."></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="button">
+                                    <button  id="commentBtn">Post Comment</button>
+                                    <span></span>
+                                    <i class="fa fa-paper-plane"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="empty" style="height:max-content">
+                        <h2>Comments</h2>
+                        @foreach(var item in Model.Comments.Where(x=>x.BlogId==Model.Blog.Id && !x.IsDeleted)){
+                        <div class="comment">
+                            <img src="~/Images/Users/@item.AppUser.Image"/>
+                            <div >
+                                <div class="comment-info">
+                                        <h4>@item.AppUser.Name @item.AppUser.Surname</h4>
+                                        <span>@item.CreatedAt.ToShortDateString()</span>
+                                </div>
+                                <span>@item.Subject</span>
+                                    <span>@item.Text</span>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sidebar-block">
+            
+                <div class="sidebar-blog category-blog">
+                    <h4>Categories</h4>
+                    <ul>
+                        @foreach (var item in Model.Categories)
+                        {
+                            if (@item.BlogCategories.Where(x => !x.IsDeleted && x.Blog != null).ToList().Count>0)
+                            {
+                                <li class="category-item">
+                                    <a asp-action="index" asp-controller="blog" asp-route-id="@item.Id">@item.Name<span></span></a>
+                                </li>
+                            }
+                            
+                        }
+                    </ul>
+                </div>
+                <div class="sidebar-blog post-blog">
+                    <h4>Recent Post</h4>
+                    @foreach (var item in Model.Blogs.Take(2).OrderByDescending(x => x.CreatedAt))
+                    {
+                        <div class="post-item">
+                            <img src="~/Images/Blogs/@item.Image" alt="" />
+                            <h6>
+                                <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Title</a>
+                            </h6>
+                            <ul>
+                                <li>@item.CreatedAt.Day/@item.CreatedAt.Month/@item.CreatedAt.Year</li>
+                                <li>@item.Comments.Count() comments</li>
+                            </ul>
+                        </div>
+
+                    }
+                </div>
+                <div class="sidebar-blog tags-blog">
+                    <h4>TAGS</h4>
+                    <div class="tags">
+                        @foreach (var item in Model.Tags)
+                        {
+                            <a href="#">@item.Name</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/JavaScript/spinner.js"></script>
+<script src="~/JavaScript/blog-detail.js"></script>

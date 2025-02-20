@@ -1,50 +1,129 @@
-using FinalProject.DAL.Data;
-using FinalProject.Service.Services.Telegram;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Serilog;
+using FluentValidation.AspNetCore;
+using MicroElements.Swashbuckle.FluentValidation.AspNetCore; // Optional: Swagger Validation
+using FinalProject.DAL.Data;
+using FinalProject.Service.Services.Implementations;
+using FinalProject.Service.Services.Interfaces;
+using FinalProject.DAL.Repository.Interface;
+using FinalProject.DAL.Repository;
+using FinalProject.DAL.Entities;
+using Microsoft.AspNetCore.Identity;
 
-namespace FinalProject.App
+namespace FinalProject.App;
+
+public class Program
 {
-	public class Program
-	{
-		static async Task Main(string[] args)
-		{
-			var builder = WebApplication.CreateBuilder(args);
+    static async Task Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-			var configuration = new ConfigurationBuilder()
-				.SetBasePath(Directory.GetCurrentDirectory())
-				.AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
-				.Build();
+        // Load Configuration
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .Build();
 
-			// Add services to the container.
-			builder.Services.AddControllersWithViews();
+        // Configure Serilog
+        builder.Host.UseSerilog((context, loggerConfig) =>
+        {
+            loggerConfig
+                .MinimumLevel.Information()
+                .WriteTo.Console()
+                .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+                .WriteTo.MSSqlServer(
+                    connectionString: configuration.GetConnectionString("Default"),
+                    sinkOptions: new Serilog.Sinks.MSSqlServer.MSSqlServerSinkOptions
+                    {
+                        TableName = "Logs",
+                        AutoCreateSqlTable = true
+                    });
+        });
 
-			builder.Services.AddDbContext<CustomDBContext>(
-				opts => opts.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+        // Add Core Services
+        builder.Services.AddDbContext<CustomDBContext>(opts =>
+            opts.UseSqlServer(configuration.GetConnectionString("Default")));
+        builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+        builder.Services.AddScoped<IAboutSkillService, AboutSkillService>();
+        builder.Services.AddScoped<IAboutTextService, AboutTextService>();
+        builder.Services.AddScoped<IAccountService, AccountService>();
+        builder.Services.AddScoped<IAssociateService, AssociateService>();
+        builder.Services.AddScoped<IAuctionService, AuctionService>();
+        builder.Services.AddScoped<IBanService, BanService>();
+        builder.Services.AddScoped<IBidService, BidService>();
+        builder.Services.AddScoped<IBlogService, BlogService>();
+        builder.Services.AddScoped<IBookService, BookService>();
+        builder.Services.AddScoped<IBraintreeService, BraintreeService>();
+        builder.Services.AddScoped<IBrandService, BrandService>();
+        builder.Services.AddScoped<ICarImageService, CarImageService>();
+        builder.Services.AddScoped<ICarService, CarService>();
+        builder.Services.AddScoped<ICategoryService, CategoryService>();
+        builder.Services.AddScoped<IColorService, ColorService>();
+        builder.Services.AddScoped<ICommentService, CommentService>();
+        builder.Services.AddScoped<ICountryService, CountryService>();
+        builder.Services.AddScoped<IEmailService, EmailService>();
+        builder.Services.AddScoped<IFeatureService, FeatureService>();
+        builder.Services.AddScoped<IFuelService, FuelService>();
+        builder.Services.AddScoped<IMessageService, MessageService>();
+        builder.Services.AddScoped<IModelService, ModelService>();
+        builder.Services.AddScoped<IPositionService, PositionService>();
+        builder.Services.AddScoped<ISettingService, SettingService>();
+        builder.Services.AddScoped<ISliderService, SliderService>();
+        builder.Services.AddScoped<ISocialService, SocialService>();
+        builder.Services.AddScoped<IStaffService, StaffService>();
+        builder.Services.AddScoped<IStatusService, StatusService>();
+        builder.Services.AddScoped<ISubscribeService, SubscribeService>();
+        builder.Services.AddScoped<ITagService, TagService>();
+        builder.Services.AddScoped<ITextWhyService, TextWhyService>();
+        builder.Services.AddScoped<ITelegramBotService, TelegramBotService>();
+        builder.Services.AddScoped<IUserPricingService, UserPricingService>();
+        builder.Services.AddIdentity<AppUser, IdentityRole>()
+          .AddEntityFrameworkStores<CustomDBContext>()
+            .AddDefaultTokenProviders();
 
-			var app = builder.Build();
+        builder.Services.AddControllersWithViews();
+        builder.Services.AddRazorPages();
+        builder.Services.AddAutoMapper(typeof(Program));
 
-			// Configure the HTTP request pipeline.
-			if (!app.Environment.IsDevelopment())
-			{
-				app.UseExceptionHandler("/Home/Error");
-				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-				app.UseHsts();
-			}
+        // Add FluentValidation
+        builder.Services.AddFluentValidationAutoValidation();
+        builder.Services.AddFluentValidationClientsideAdapters();
 
-			app.UseHttpsRedirection();
-			app.UseStaticFiles();
+        // Register Telegram Bot Service
+        builder.Services.AddSingleton<ITelegramBotService, TelegramBotService>();
 
-			app.UseRouting();
+        var app = builder.Build();
 
-			app.UseAuthorization();
+        // Middleware Configuration
+        if (!app.Environment.IsDevelopment())
+        {
+            app.UseExceptionHandler("/Home/Error");
+            app.UseHsts();
+        }
 
-			app.MapControllerRoute(
-				name: "default",
-				pattern: "{controller=Home}/{action=Index}/{id?}");
+        app.UseSerilogRequestLogging();
+        app.UseHttpsRedirection();
+        app.UseStaticFiles();
+        app.UseRouting();
+        app.UseAuthorization();
 
-			Task.Run(() => TelegramBot.StartBotAsync(configuration));
+        // Define Routes
+        app.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Home}/{action=Index}/{id?}");
 
-			app.Run();
-		}
-	}
+        // Run Telegram Bot in the Background
+        var telegramBotService = app.Services.GetRequiredService<ITelegramBotService>();
+        _ = Task.Run(() => telegramBotService.StartBotAsync(configuration));
+
+        // Start Application
+        app.Run();
+    }
 }

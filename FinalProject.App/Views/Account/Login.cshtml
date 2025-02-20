@@ -1,0 +1,73 @@
+﻿@model LoginDto
+@section Title
+    {
+    Login
+}
+<div class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Login</h1>
+                <div class="line"></div>
+                <span>
+                    Welcome to our Auction Site. Please fill all the gaps!
+                </span>
+                <div class="pages">
+                    <ul>
+                        <li>
+                            <a asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li><i class="fa fa-dot-circle-o"></i></li>
+                        <li>
+                            <a style="color: #f4c23d;" asp-action="login" asp-controller="account">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page">
+    <section class="login-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="login-container" style="position:unset; height: max-content;">
+                        <div class="login-text">
+                            <h2>login</h2>
+                            <span>Please login using account detail bellow.</span>
+                        </div>
+                        <div class="login-form">
+                            <form method="post">
+                                <div class="text text-danger" asp-validation-summary="ModelOnly"></div>
+                                <div>
+                                    <span class="text text-danger" asp-validation-for="Email"></span>
+                                    <input asp-for="Email" placeholder="Email" />
+                                </div>
+                                <div>
+                                    <span class="text text-danger" asp-validation-for="Password"></span>
+                                    <div id="passwordInput">
+                                    <input asp-for="Password" type="password" placeholder="Password" />
+                                    <i id="passwordShow" class="fa fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+
+                                <div class="button-box">
+                                    <div class="login-toggle-btn">
+                                        <input type="checkbox" asp-for="RememberMe" id="remember" />
+                                        <label asp-for="RememberMe">Remember me</label>
+                                        <a asp-action="forgetpassword" asp-controller="account">Forgot Password?</a>
+                                    </div>
+                                    <button type="submit" class="default-btn" style="width:100%">
+                                        Login
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="~/JavaScript/login.js"></script>

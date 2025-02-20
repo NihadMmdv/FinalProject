@@ -1,0 +1,204 @@
+﻿@model BlogVM
+@{
+    int i = 0;
+}
+@section Title
+{
+  Blogs
+}
+<div class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Our Blogs</h1>
+                <div class="line"></div>
+                <span>
+                    You can read blogs and write your opinion!
+                </span>
+                <div class="pages">
+                    <ul>
+                        <li>
+                            <a asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li><i class="fa fa-dot-circle-o"></i></li>
+                        <li>
+                            <a style="color: #f4c23d;" asp-action="index" asp-controller="blog">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="blog-page section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 main-block blog_container">
+                @foreach(var item in Model.Blogs){
+                <div class="blog-item">
+                    <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">
+                        <img style="height:400px" src="~/Images/Blogs/@item.Image" alt="" />
+                    </a>
+                    <div class="content">
+                        <div class="info">
+                            <ul>
+                                    <li>@item.CreatedAt.Day/@item.CreatedAt.Month/@item.CreatedAt.Year</li>
+                                <li>
+                                    Posted by
+                                        <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Author</a>
+                                </li>
+                            </ul>
+                            <div class="title">
+                                    <a asp-action ="detail" asp-controller="blog" asp-route-id="@item.Id">
+                                    <h2>@item.Title</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>
+                               @item.Description.Substring(0,150)...
+                            </p>
+                                <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                }
+                <ul class="pagination">
+                    <li><a class=" page-link" asp-controller="blog" asp-action="index" asp-route-page="1">«</a></li>
+                    @for (int j = 1; j <= ViewBag.TotalPage; j++)
+                    {
+                        @if (j == ViewBag.CurrentPage)
+                        {
+                            <li class="page-item active"><a class=" page-link" asp-controller="blog" asp-action="index" asp-route-page="@j">@j</a></li>
+                        }
+                        else
+                        {
+                            <li class="page-item"><a class=" page-link" asp-controller="blog" asp-action="index" asp-route-page="@j">@j</a></li>
+                        }
+                    }
+                    <li><a class="page-link" asp-controller="blog" asp-action="index" asp-route-page="@ViewBag.TotalPage">»</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 sidebar-block">
+                <div class="sidebar-blog search-blog">
+                    <form method="get" role="search">
+                        <div>
+                            <input type="text" class="searchInput" placeholder="Search for:" />
+                            <button class="SearchButton" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar-blog category-blog">
+                    <h4>Categories</h4>
+                    <ul>
+                        @foreach (var item in Model.Categories)
+                        {
+                        <li class="category-item">
+                            <a asp-action="index" asp-controller="blog" asp-route-id="@item.Id">@item.Name<span> (@item.BlogCategories.Where(x=>!x.IsDeleted && x.Blog!=null).ToList().Count) </span></a>
+                        </li>
+                        }
+                    </ul>
+                </div>
+                <div class="sidebar-blog post-blog">
+                    <h4>Recent Post</h4>
+                    @foreach(var item in Model.Blogs.Take(2).OrderByDescending(x => x.CreatedAt))
+                    {
+                        <div class="post-item">
+                            <img src="~/Images/Blogs/@item.Image" alt="" />
+                            <h6>
+                                <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Title</a>
+                            </h6>
+                            <ul>
+                                <li>@item.CreatedAt.Day/@item.CreatedAt.Month/@item.CreatedAt.Year</li>
+                                <li>@item.Comments.Count() comments</li>
+                            </ul>
+                        </div>
+
+                    }
+                </div>
+                <div class="sidebar-blog tags-blog">
+                    <h4>TAGS</h4>
+                    <div class="tags">
+                        @foreach (var item in Model.Tags)
+                        {
+                            <a href="#">@item.Name</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const submit = document.querySelector(".SearchButton");
+    const searchInput = document.querySelector(".searchInput")
+    const container = document.querySelector(".blog_container")
+    const imgs = document.querySelectorAll(".blog-page .blog-item a img")
+    let page = 1;
+    searchInput.addEventListener("input", (e) => {
+        e.preventDefault();
+        if (searchInput.value == "") {
+            location.reload();
+        }
+        fetchSearch(page);
+    })
+  
+    imgs.forEach(img => {
+        img.addEventListener("mouseover", () => {
+            img.parentElement.parentElement.querySelector("h2").style.color = "#f4c23d"
+        })
+        img.addEventListener("mouseout", () => {
+            img.parentElement.parentElement.querySelector("h2").style.color = "#222222"
+        })
+    })
+    function fetchSearch(page) {
+        let href = `/blog/search?search=${searchInput.value}&page=${page}`;
+        fetch(href)
+            .then(x => x.json())
+            .then(x => {
+                container.innerHTML = ""
+                x.forEach(item => {
+                    let text = JSON.stringify(item.description).substring(0, 250);
+                    let date = new Date(`${item.createdAt}`);
+                    let view = `<div class="blog-item">
+                                        <a href="/blog/detail/${item.id}">
+                                    <img style="height:400px" src="/Images/Blogs/${item.image}" alt="" />
+                                </a>
+                                <div class="content">
+                                    <div class="info">
+                                        <ul>
+                                                     <li>${date.toLocaleDateString()}</li>
+                                            <li>
+                                                Posted by
+                                                        <a href="/blog/detail/${item.id}">${item.author}</a>
+                                            </li>
+                                        </ul>
+                                        <div class="title">
+                                                    <a href="/blog/detail/${item.id}">
+                                                        <h2>${item.title}</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                           ${text}...
+                                        </p>
+                                                <a href="/blog/detail/${item.id}">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>`;
+                    container.innerHTML += view;
+                })
+                let text = ` <a style="cursor:pointer;" class="more">READ MORE</a>`
+                container.innerHTML += text;
+                const more = document.querySelector(".blog_container .more");
+                more.addEventListener("click", () => {
+                    console.log(page)
+                    page++;
+                    fetchSearch(page);
+
+                })
+            })
+    }
+</script>
+<script src="~/JavaScript/spinner.js"></script>

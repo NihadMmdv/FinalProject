@@ -1,8 +1,241 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model HomeVM
+@using System.Text.Json
+@{
+    int i = 0;
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section Title
+{
+  Home
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["Register"]))
+{
+    <div style="display:none;" id="verifyEmail">
+        @TempData["Register"]
+    </div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["Verify"]))
+{
+    <div style="display:none;" id="successVerify">
+        @TempData["Verify"]
+    </div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["Mail"]))
+{
+    <div style="display:none;" id="emailRegister">
+        @TempData["Mail"]
+    </div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["AdminInfo"]))
+{
+    <div style="display:none;" id="adminInfo">
+        @TempData["AdminInfo"]
+    </div>
+}
+<div class="slider">
+    @foreach(var item in Model.Sliders)
+    {
+        <img id="img-@item.Id" src="~/Images/Sliders/@item.Image" alt="Image @item.Id" />
+    }
 </div>
+<div class="navigation-button">
+    @foreach (var item in Model.Sliders)
+    {
+        if (i == 0)
+        {
+            <span class="dot active" onclick="changeSlide(@i)"></span>
+        }
+        else
+        {
+            <span class="dot" onclick="changeSlide(@i)"></span>
+        }
+        i++;
+    }
+</div>
+
+<div id="page">
+    <div class="seeAll"></div>
+    <section class="see-row">
+        <div class="seeAll-container">
+            <div class="seeAll-columns">
+                <div class="seeAll-column">
+                    <div class="base-container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                        Owners of salvage-title vehicles will encounter
+                                        some unique issues.
+                                    </p>
+                                    <div class="yellowButton">
+                                        <a asp-action="index" asp-controller="shop">
+                                            See All Cars
+                                            <i class="fa fa-car"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-us section">
+        <div class="why-us-container kc-row-container kc-container">
+            <div class="why-us-columns kc-wrap-columns">
+                <div class="why-us-column col-sm-12">
+                    <div class="kc-elm kc_row kc_row_inner">
+                        <div class="left-why-us">
+                            <div class="heading-left">
+                                <h2>Why choose us?</h2>
+                                <span>
+                                    When you work with us, you can count on personalized, one-on-one service every step of the way.
+                                </span>
+                                <div class="line"></div>
+                            </div>
+                            <div class="service-left">
+                                @await Html.PartialAsync("_WhySection", Model.Why)
+                            </div>
+                        </div>
+                        <div class="right-why-us kc_column_inner">
+                            <div class="kc_wrapper kc-col-inner-container">
+                                <div class="right-img">
+                                    <img src="~/Images/Settings/@Model.Setting.PhotoWhy"
+                                         alt="" />
+                                    <div class="img-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-listing section">
+        <div class="kc-row-container">
+            <div class="kc-wrap-columns">
+                <div class="feature-column col-sm-12">
+                    <div>
+                        <div class="header">
+                            <h2>Featured Cars Listing</h2>
+                            <span>
+                                You can sell and buy new cars from auctions!
+                            </span>
+                            <div class="dec">
+                                <i class="fa fa-car"></i>
+                            </div>
+                            <div class="line-dec"></div>
+                        </div>
+                        <div class="cars">
+                            <div class="cars-container">
+                                @await Html.PartialAsync("_Car", Model.Cars.Take(5))
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blogs section">
+        <div class="kc-row-container">
+            <div class="kc-wrap-columns">
+                <div class="blog-column col-sm-12">
+                    <div>
+                        <div class="header">
+                            <h2>Blog News</h2>
+                            <span>
+                                You can read blogs and write your opinion!
+                            </span>
+                            <div class="dec">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="line-dec"></div>
+                        </div>
+                        <div class="data">
+                            <div class="left-data col-md-6">
+                                <div>
+                                      @foreach(var item in Model.Blogs.Skip(0).OrderByDescending(x => x.CreatedAt).Take(1))
+                                    {
+                                        <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">
+                                        <img width="570"
+                                             height="400"
+                                             style="width:100%;height:400px;"
+                                             src="~/Images/Blogs/@item.Image"
+                                             class="attachment-auction_homeblogonly size-auction_homeblogonly wp-post-image"
+                                             />
+                                    </a>
+                                    <div class="video-content">
+                                        <div class="inner-content">
+                                                <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                            <div class="title">
+                                                    <a asp-action ="detail" asp-controller="blog" asp-route-id="@item.Id">
+                                                    <h2>@item.Title</h2>
+                                                </a>
+                                                <ul>
+                                                        <li>@item.CreatedAt.Day/@item.CreatedAt.Month/@item.CreatedAt.Year</li>
+                                                    <li>
+                                                        Posted by
+                                                            <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Author</a>
+                                                    </li>
+                                                    <li style="border:none;">
+                                                        <a class="fk_link"
+                                                               asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Comments.Count() Comments</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="right-data col-md-6">
+                                @foreach (var item in Model.Blogs.OrderByDescending(x => x.CreatedAt).Skip(1).Take(2))
+                                {
+                                    <div class="blog-item">
+                                        <div class="up-content">
+                                            <ul>
+                                                <li>@item.CreatedAt.Day/@item.CreatedAt.Month/@item.CreatedAt.Year</li>
+                                                <li style="border:none;">
+                                                    Posted by
+                                                    <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Author</a>
+                                                </li>
+                                            </ul>
+                                            <div class="title">
+                                                <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">
+                                                    <h2>@item.Title</h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text-content">
+                                            @item.Description.Substring(0, 150)...
+                                        </div>
+                                        <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">READ MORE</a>
+                                    </div>
+                                }
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <div class="swiper sample-slider section" >
+
+        <div class="swiper-wrapper">
+                @foreach(var item in Model.Associates)
+                                    {
+            <div class="swiper-slide"><img src="./Images/Associates/@item.Image" style="height:150px"></div>
+                                    }
+       
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/JavaScript/home.js"></script>
+<script src="~/JavaScript/spinner.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="~/JavaScript/swipper.js"></script>

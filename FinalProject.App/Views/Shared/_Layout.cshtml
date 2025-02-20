@@ -1,49 +1,463 @@
-﻿<!DOCTYPE html>
+﻿@inject FinalProject.Service.Services.Interfaces.ISettingService settingService
+@{
+    SettingVM settingVM = await settingService.GetSetting();
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - FinalProject.App</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/FinalProject.App.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+               />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="~/Images/Settings/mWhite.jpg" type="image/ico">
+    <link rel="stylesheet" href="~/Scss/main.css" />
+    <title>@RenderSection("Title",false)</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FinalProject.App</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (!string.IsNullOrWhiteSpace((string)TempData["Email"]))
+    {
+        <div style="display:none;" id="emailFormat">
+            @TempData["Email"]
+        </div>
+    }
+    <div id="spinner" style="display:none;">
+        <div class="loader">
+            <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(2 1)" stroke="#002742" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <path class="car__body" d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01" stroke-width="3" />
+                    <ellipse class="car__wheel--left" stroke-width="3.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922" ry="6.808" />
+                    <ellipse class="car__wheel--right" stroke-width="3.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922" ry="6.808" />
+                    <path class="car__line car__line--top" d="M22.5 16.5H2.475" stroke-width="3" />
+                    <path class="car__line car__line--middle" d="M20.5 23.5H.4755" stroke-width="3" />
+                    <path class="car__line car__line--bottom" d="M25.5 9.5h-19" stroke-width="3" />
+                </g>
+            </svg>
+
+
+        </div>
+    </div>
+    <div class="sidebar-menu-container">
+        <div class="sidebar-menu-push">
+            <div class="sidebar-menu-overlay"></div>
+            <div class="sidebar-menu-inner">
+                <div id="sub-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="social-icons">
+                                    <ul>
+                                        @foreach(var item in settingVM.Setting.Socials)
+                                        {
+                                            <li>
+                                                <a class="facebook" href="@item.Link" target="_blank">
+                                                    <i class="fab fa-@item.Icon"></i>
+                                                </a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="right-info hidden-sm">
+                                    <ul>
+                                        <li>Call us: <em>@settingVM.Setting.Phone1</em></li>
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <li>
+                                                    <a asp-action="info" asp-controller="account">@User.Identity.Name</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="logout" asp-controller="account">Logout</a>
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <a asp-action="login" asp-controller="account">Login</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="signup" asp-controller="account">Register</a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-header">
+                    <div id="main-header" class="main-header header-sticky">
+                        <div class="inner-header container clearfix">
+                            <div class="logo">
+                                <a asp-controller="home" asp-action="index">
+                                    <img src="~/Images/Settings/@settingVM.Setting.Logo" style="width:140px;height40px;">
+                                </a>
+                            </div>
+                            <div class="header-right-toggle pull-right hidden-md hidden-lg">
+                                <a class="side-menu-button"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <nav class="main-navigation text-left hidden-xs hidden-sm">
+                                <ul class="menu-nav">
+                                    <li id="menu-item">
+                                        <a asp-action="index" asp-controller="home">Home</a>
+                                    </li>
+                                    <li id="menu-item">
+                                        <a asp-action="index" asp-controller="about">About Us</a>
+                                    </li>
+                                    <li id="menu-item">
+                                        <a asp-action="index" asp-controller="service">Services</a>
+                                    </li>
+                                    <li id="menu-item" class="open">
+                                        <a asp-action="index" asp-controller="shop">Shop </a>
+                                    </li>
+                                    <li id="menu-item">
+                                        <a asp-action="index" asp-controller="blog" asp-route-id="null">Blogs</a>
+                                    </li>
+                                    <li id="menu-item">
+                                        <a asp-action="index" asp-controller="contact">Contact Us</a>
+                                    </li>
+                                    <li id="search-item">
+                                        <p>
+                                            <a href="#" class="showLink search-icon">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </p>
+                                        <div class="more example">
+                                            <form method="get" class="blog-search" role="search">
+                                                <input type="text"
+                                                       class="blog-search-field"
+                                                       placeholder="Type to search" />
+                                            </form>
+                                            <p>
+                                                <a href="#" class="hideLink">
+                                                    <button class="chat-speech-site" id="chat-speech-site"><i class="fa fa-microphone"></i></button>
+
+                                                    <i class="fa fa-close"></i>
+                                                </a>
+                                            </p>
+                                            <div class="searchValue">
+                                              
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+        @RenderBody()
+                <div class="subscribe">
+                    <div class="container">
+                        <div class="row">
+                            <div class="left-subcribe col-md-8">
+                                <div class="left-content">
+                                    <h2>SUBSCRIBE TO THE AUCTION</h2>
+                                    <div class="sent-email">
+                                        <form class="sent-email-form" method="post" asp-controller="home" asp-action="PostSubscribe">
+                                            <div asp-validation-summary="ModelOnly"></div>
+                                            <div>
+                                                <input type="email"
+                                                       name="email"
+                                                       class="email-input"
+                                                       placeholder="E-mail Address" />
+                                                <div class="simple-button">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-subcribe col-md-4">
+                                <div class="right-content">
+                                    <ul>
+                                        @foreach(var item in settingVM.Setting.Socials.Take(5))
+                                        {
+                                            <li>
+                                                <a href="@item.Link"><i class="fab fa-@item.Icon"></i></a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 fcol">
+                                <div class="widget main-logo">
+                                    <img src="~/Images/Settings/@settingVM.Setting.Logo" style="width:140px;height:42px;">
+                                    <div class="textwidget">
+                                        Maecenas ne mollis orci. Phasell iacu sapie non aliquet ex
+                                        euismo ac.
+                                    </div>
+                                </div>
+                                <div class="widget about-info">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i> @settingVM.Setting.Address
+                                        </li>
+
+                                        <li><i class="fa fa-phone"></i> @settingVM.Setting.Phone2</li>
+
+                                        <li>
+                                            <i class="fa fa-envelope-o"></i> @settingVM.Setting.Email
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 fcol">
+                                <div class="widget featured-links">
+                                    <h4>FEATURED LINKS</h4>
+                                    <div class="featured-links-container">
+                                        <ul id="menu-menu-in-widget-footer" class="menu">
+                                            <li>
+                                                <a asp-action="index" asp-controller="about">About us</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="service">Services</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="about">Meet the team</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="about">Privacy Policy</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="blog">Company News</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="shop">Shop</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="shop">New Vehicle</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="service">Features</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="service">Promotion</a>
+                                            </li>
+                                            <li>
+                                                <a asp-action="index" asp-controller="contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 fcol">
+                                <div class="widget featured-links recent-post">
+                                    <h4>Recent Post</h4>
+                                    @foreach(var item in settingVM.Blogs.Take(2))
+                                    {
+                                        <div class="latest-item">
+                                            <img src="~/Images/Blogs/@item.Image"  style="width:64px;height:64px;"/>
+                                            <h6>
+                                                <a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">@item.Title</a>
+                                            </h6>
+                                            <ul>
+                                                <li>@item.CreatedAt.Day/@item.CreatedAt.Month/@item.CreatedAt.Year</li>
+                                                @if(item.Comments is null)
+                                                {
+                                                    <li>0 comments</li>
+
+                                                }
+                                                else{
+                                                <li>@item.Comments.Count() comments</li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-md-3 fcol">
+                                <div class="widget featured-links gallery">
+                                    <h4>GALLERY</h4>
+                                    @foreach(var item in settingVM.CarImages.Take(8))
+                                    {
+                                        <div class="gallery-item">
+                                            <a asp-action="detail" asp-controller="shop" asp-route-id="@item.CarId">
+                                                <img src="~/Images/Cars/@item.Image"
+                                                     style="aspect-ratio : 1 / 1;">
+                                            </a>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="sub-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <p>
+                                    Copyrights 2023 <span> Auction</span>. Developed by Nijat
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <ul>
+                                    <li>
+                                        <a asp-action="index" asp-controller="home"
+                                           aria-current="page">Home</a>
+                                    </li>
+                                    <li>
+                                        <a asp-action="index" asp-controller="blog"
+                                           aria-current="page">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a asp-action="index" asp-controller="contact"
+                                           aria-current="page">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a asp-action ="index" asp-controller="service"
+                                           aria-current="page">Services</a>
+                                    </li>
+                                    <li>
+                                        <a asp-action="index" asp-controller="shop"
+                                           aria-current="page">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a asp-action="index" asp-controller="about"
+                                           aria-current="page">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a  class="to-top-button"><i class="fa fa-angle-up"></i></a>
+                <div id="body">
+
+                    <div id="chat-circle" class="btn btn-raised">
+                        <div id="chat-overlay"></div>
+                        <i class="material-icons">speaker_phone</i>
+                    </div>
+
+                    <div class="chat-box">
+                        <div class="chat-box-header">
+                            FinalProjectBot
+                            <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+                        </div>
+                        <div class="chat-box-body">
+                            <div class="chat-box-overlay">
+                            </div>
+                            <div class="chat-logs">
+                            </div><!--chat-log -->
+                        </div>
+                        <div class="chat-input">
+                            <form>
+                                <input type="text" id="chat-input" name="message" placeholder="Send a message..." />
+                                <button class="chat-speech" id="chat-speech"><i class="fa fa-microphone"></i></button>
+                                <button  class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <audio id="botSound" src="~/Audio/botSound.wav"></audio>
+
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - FinalProject.App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    </div>
+    <nav class="sidebar-menu">
+        <div class="sidebar">
+            <div class="content">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <img src="~/Images/Users/@settingVM.AppUser.Image" alt="" />
+                                <div>
+                                    <span>@settingVM.AppUser.Name @settingVM.AppUser.Surname</span>
+                                    <span>@settingVM.AppUser.Email</span>
+                                </div>
+                            }
+                            else
+                            {
+                                <img src="~/Images/Users/User-avatar.svg.png" alt="" />
+
+                            }
+                        </li>
+                       @*  <li class="searchNavbar">
+                            <input type="text" placeholder="Search..." />
+                            <i class="fa fa-search"></i>
+                        </li> *@
+                        <li style="margin-top:40px;">
+                            <i class="fa fa-home"></i>
+                            <a title="Home" asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-share"></i>
+                            <a asp-action="index" asp-controller="about">About</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-wrench"></i>
+                            <a title="Home" asp-action="index" asp-controller="service">Services</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-car"></i>
+                            <a title="Home" asp-action="index" asp-controller="shop">Shop</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-id-card"></i>
+                            <a title="Home" asp-action="index" asp-controller="blog">Blogs</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <a title="Home" asp-action="index" asp-controller="contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul>
+                         @if (User.Identity.IsAuthenticated)
+                            {
+                        <li>
+                                <i class="fa fa-sign-out"></i>
+                                <a asp-action="logout" asp-controller="account">Log out</a>
+                           
+                        </li>
+                            <li>
+                                <button><a asp-action="info" asp-controller="account" style="padding:0;color:inherit;">Info</a></button>
+                            </li>
+                        }
+
+                           @if (!User.Identity.IsAuthenticated)
+                            {
+                            <li>
+                                <button><a asp-action="signup" asp-controller="account" style="padding:0;color:inherit;">Register</a></button>
+                            </li>
+                           <li>
+                                <button><a asp-action="login" asp-controller="account" style="padding:0;color:inherit;">Login</a></button>
+                           </li>
+                            }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="~/JavaScript/sidebar.js"></script>
+<script src="~/JavaScript/search.js"></script>

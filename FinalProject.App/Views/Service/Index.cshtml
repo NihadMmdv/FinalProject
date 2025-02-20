@@ -1,0 +1,214 @@
+﻿@model ServiceVM
+@section Title
+    {
+    Service
+}
+@{
+    string userId = null;
+    int i = 0;
+    if (User.Identity.IsAuthenticated)
+    {
+       userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+    }
+}
+<div class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Services</h1>
+                <div class="line"></div>
+                <span>
+                   User packages, our Service benefits and others
+                </span>
+                <div class="pages">
+                    <ul>
+                        <li>
+                            <a asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li><i class="fa fa-dot-circle-o"></i></li>
+                        <li>
+                            <a style="color: #f4c23d;" asp-action="index" asp-controller="service">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page">
+    <section class="why-us section">
+        <div class="why-us-container kc-row-container kc-container">
+            <div class="why-us-columns kc-wrap-columns">
+                <div class="why-us-column col-sm-12">
+                    <div class="kc-elm kc_row kc_row_inner">
+                        <div class="left-why-us">
+                            <div class="heading-left">
+                                <h2>Why choose us?</h2>
+                                <span>
+                                    When you work with us, you can count on personalized, one-on-one service every step of the way.
+                                </span>
+                                <div class="line"></div>
+                            </div>
+                            <div class="service-left">
+                                @await Html.PartialAsync("_WhySection", Model.Why)
+                            </div>
+                        </div>
+                        <div class="right-why-us kc_column_inner">
+                            <div class="kc_wrapper kc-col-inner-container">
+                                <div class="right-img">
+                                    <img src="~/Images/Settings/@Model.Setting.PhotoWhy"
+                                         alt="" />
+                                    <div class="img-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facts section">
+        <div class="facts-container">
+            <div class="facts-columns">
+                <div class="facts-column">
+                    <div>
+                        <div class="facts-row-inner">
+                            <div class="facts-column-inner">
+                                <div>
+                                    <div class="fact-item">
+                                        <i class="fa fa-user"></i>
+                                        <div>
+                                            <span class="fact-count artim"
+                                                  aria-valuenow="@Model.AppUsers.Count()"></span>
+                                        </div>
+                                        <span class="fact-mean">Users in the Site</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facts-column-inner">
+                                <div>
+                                    <div class="fact-item">
+                                        <i class="fa fa-car"></i>
+                                        <div>
+                                            <span class="fact-count"
+                                                  aria-valuenow="@Model.Cars.Where(x=>!x.IsDeleted && x.StatusId==2)?.Count()"></span>
+                                        </div>
+                                        <span class="fact-mean">Cars in Auction</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facts-column-inner">
+                                <div>
+                                    <div class="fact-item">
+                                        <i class="fa fa-usd"></i>
+                                        <div>
+                                            <span class="fact-count"
+                                                  aria-valuenow="@Model.Cars.Where(x=>!x.IsDeleted && x.StatusId==3)?.Count()"></span>
+                                        </div>
+                                        <span class="fact-mean">The Winning Cars</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facts-column-inner">
+                                <div>
+                                    <div class="fact-item">
+                                        <i class="fa fa-gavel"></i>
+                                        <div>
+                                            <span class="fact-count"
+                                                  aria-valuenow="@Model.Bids.Where(x=>!x.IsDeleted)?.Count()"></span>
+                                        </div>
+                                        <span class="fact-mean">Bids in Auction</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-tables section">
+        <div class="row-container">
+            <div class="wrap-columns">
+                <div class="kc-column">
+                    <div class="kc-col-container">
+                        <div class="header text-center">
+                            <h2>Pricing Tables</h2>
+                            <span>
+                                Choose the package that suits you and enjoy
+                            </span>
+                            <div>
+                                <i class="fa fa-dollar"></i>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price-cards kc-row-inner">
+                            @foreach(var item in Model.UserPricings.Take(3)){
+                            <div class="kc_column_inner">
+                                <div>
+                                    <div class="pricing-table">
+                                        <h2>@item.Name</h2>
+                                            @if (item.Price != 0)
+                                            {
+                                                <span><em>$</em>@item.Price<em>/mo</em></span>
+                                            }
+                                            else
+                                            {
+                                                <span style="text-transform:none;"><em></em>Free<em></em></span>
+
+                                            }
+                                        <ul style="height:130px;">
+                                                @foreach(var feature in item.Features.Where(x=>!x.IsDeleted).Take(5).OrderBy(x=>x.Icon))
+                                                {
+                                                    if (feature.Icon)
+                                                    {
+                                                        <li>
+                                                            <i class="fa fa-check"></i>@feature.Name
+                                                        </li>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <li class="close">
+                                                            <i class="fa fa-close"></i>@feature.Name
+                                                        </li>
+
+                                                    }
+                                                }
+                                        </ul>
+                                        <div class="signup-button">
+                                                @if (User.Identity.IsAuthenticated && User.IsInRole("User"))
+                                                {
+                                                    if (i == 0){
+                                                        <a asp-action="info" asp-controller="account">Default</a>
+                                                    }
+                                                    else
+                                                    {
+                                                    <a asp-action="UpdateUser" asp-controller="payment" asp-route-pricingId="@item.Id"
+                                                        asp-route-userId="@userId">Update User</a>
+                                                    }
+                                                    i++;
+                                                }
+                                                else if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
+                                                {
+                                                    <a asp-action="index" asp-controller="service">For User</a>
+                                                }
+                                                else
+                                                {
+                                                <a asp-action="signup" asp-controller="account">Sign Up</a>
+                                                }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="~/JavaScript/spinner.js"></script>
+<script src="~/JavaScript/service.js"></script>

@@ -51,7 +51,19 @@ namespace FinalProject.DAL.Data
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.Entity<Setting>().HasData(new Setting
+            {
+                Id = 1,
+                PhotoWhy = "default.jpg",  // Ensure a default image exists
+				Address = "address",
+				Email = "email",
+				Logo = "default.jpg",
+				LogoUrl = "logourl",
+				Phone1 = "1234567890",
+				Phone2 = "8734567890",
+				PhotoWhyUrl = "photowhyurl",
+            });
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
 			modelBuilder.ApplyConfiguration(new TagConfiguration());
 			modelBuilder.ApplyConfiguration(new BlogConfiguration());
 			modelBuilder.ApplyConfiguration(new MessageConfiguration());

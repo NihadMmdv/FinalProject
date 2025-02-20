@@ -1,0 +1,84 @@
+﻿@model RegisterDto
+@section Title
+    {
+    Register
+}
+<div class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Register</h1>
+                <div class="line"></div>
+                <span>
+                    Welcome to our Auction Site. Please fill all the gaps!
+                </span>
+                <div class="pages">
+                    <ul>
+                        <li>
+                            <a asp-action="index" asp-controller="home">Home</a>
+                        </li>
+                        <li><i class="fa fa-dot-circle-o"></i></li>
+                        <li>
+                            <a style="color: #f4c23d;" asp-action="signup" asp-controller="account">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page">
+    <section class="register-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="register-container">
+                        <div class="register-text">
+                            <h2>register</h2>
+                            <span>Please register using account detail bellow.</span>
+                        </div>
+                        <div class="register-form">
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="text text-danger" asp-validation-summary="ModelOnly"></div>
+                                <span class="text text-danger" asp-validation-for="Name"></span>
+                                <input asp-for="Name" placeholder="Name" />
+                                <span class="text text-danger" asp-validation-for="Surname"></span>
+                                <input asp-for="Surname" placeholder="Surname" />
+                                <span class="text text-danger" asp-validation-for="UserName"></span>
+                                <input asp-for="UserName" placeholder="Username" />
+                                <span class="text text-danger" asp-validation-for="Email"></span>
+                                <input asp-for="Email" placeholder="Email" />
+                                <span class="text text-danger" asp-validation-for="Password"></span>
+                                <input asp-for="Password" placeholder="Password" />
+                                <span class="text text-danger" asp-validation-for="ConfirmPassword"></span>
+                                <input asp-for="ConfirmPassword"
+                                       placeholder="Confirm Password" />
+                                <span class="text text-danger" asp-validation-for="file"></span>
+                                <input asp-for="file"
+                                       placeholder="Photo"  style="height:max-content;padding:0;"/>
+                                <div class="form-group">
+                                    <select asp-for="CountryId" class="form-select" aria-label="Default select example">
+                                        <option selected value="0">Select one of Countries</option>
+                                        @foreach (var item in ViewBag.Countries)
+                                        {
+                                            <option value="@item.Id" style="background-image:url(~/Images/Countries/@item.FlagImage);">@item.Name</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="CountryId" class="text text-danger"></span>
+                                </div>
+                                <div class="button-box">
+                                    <div class="register-toggle-btn">
+                                        <a asp-action ="forgetpassword" asp-controller="account">Forgot Password?</a>
+                                    </div>
+                                    <button type="submit" class="default-btn">
+                                        Register
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

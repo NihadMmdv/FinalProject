@@ -332,3 +332,4 @@ C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.App\obj\Debu
 C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.App\obj\Debug\net8.0\FinalProject.App.pdb
 C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.App\obj\Debug\net8.0\FinalProject.App.genruntimeconfig.cache
 C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.App\obj\Debug\net8.0\ref\FinalProject.App.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.App\obj\Debug\net8.0\FinalProject.App.sourcelink.json

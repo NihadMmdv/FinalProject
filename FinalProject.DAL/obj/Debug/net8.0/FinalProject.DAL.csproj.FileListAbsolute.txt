@@ -10,3 +10,4 @@ C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debu
 C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\refint\FinalProject.DAL.dll
 C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.pdb
 C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\ref\FinalProject.DAL.dll
+C:\Users\Lenovo 2024\Desktop\Code Academy\FinalProject\FinalProject.DAL\obj\Debug\net8.0\FinalProject.DAL.sourcelink.json
