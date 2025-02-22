@@ -16,12 +16,16 @@ namespace FinalProject.App.Areas.Admin.Controllers
         private readonly IAccountService _service;
         private readonly IEmailService _mailService;
         private readonly ICountryService _countryService;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(IEmailService mailService, IAccountService service, ICountryService countryService)
+        public AccountController(IEmailService mailService, IAccountService service, ICountryService countryService, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _mailService = mailService;
             _service = service;
             _countryService = countryService;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
         [Authorize]
         public async Task<IActionResult> Info()
@@ -52,7 +56,7 @@ namespace FinalProject.App.Areas.Admin.Controllers
             {
                 return View(dto);
             }
-            var result = await _service.Login(dto,false);
+            var result = await _service.Login(dto, false);
             if (result.StatusCode != 200)
             {
                 ModelState.AddModelError("", result.Description);
@@ -110,55 +114,56 @@ namespace FinalProject.App.Areas.Admin.Controllers
             }
             return RedirectToAction(nameof(Info));
         }
-        //public async Task<IActionResult> AdminCreate()
-        //{
-        //    AppUser SuperAdmin = new AppUser
-        //    {
-        //        Name = "SuperAdmin",
-        //        Surname = "SuperAdmin",
-        //        Email = "superadmin@FinalProject.com",
-        //        UserName = "SuperAdmin",
-        //        Image = "fbcfba13-c108-4de8-ba04-dd8372b1fa78nijat.jpg",
-        //        CountryId = 1,
-        //        UserPricingId = 3,
-        //        EmailConfirmed = true
-        //    };
-        //    await _userManager.CreateAsync(SuperAdmin, "Admin123.");
-        //    AppUser Admin = new AppUser
-        //    {
-        //        Name = "Admin",
-        //        Surname = "Admin",
-        //        Email = "admin@FinalProject.com",
-        //        UserName = "Admin",
-        //        Image  = "fbcfba13-c108-4de8-ba04-dd8372b1fa78nijat.jpg",
-        //        CountryId = 1,
-        //        UserPricingId = 3,
-        //        EmailConfirmed = true
-        //    };
-        //    await _userManager.CreateAsync(Admin, "Admin123.");
+        /*
+        public async Task<IActionResult> CreateSuperAdminUser()
+        {
+            var userExists = await _userManager.FindByEmailAsync("superadmin@TurboBid.com");
+            if (userExists == null)
+            {
+                AppUser superadmin = new AppUser
+                {
+                    UserName = "SuperAdmin",
+                    Email = "superadmin@TurboBid.com",
+                    Name = "SuperAdmin",
+                    Surname = "SuperAdmin",
+                    EmailConfirmed = true,
+                    CountryId = 1,
+                    UserPricingId = 3,
+                    Image = "nihad.jpg",
+                };
 
-        //    await _userManager.AddToRoleAsync(SuperAdmin, "SuperAdmin");
-        //    await _userManager.AddToRoleAsync(Admin, "Admin");
-        //    return Json("ok");
-        //}
-        //public async Task<IActionResult> AddRole()
-        //{
-        //    IdentityRole role = new IdentityRole
-        //    {
-        //        Name = "User"
-        //    };
-        //    IdentityRole role1 = new IdentityRole
-        //    {
-        //        Name = "Admin"
-        //    };
-        //    IdentityRole role2 = new IdentityRole
-        //    {
-        //        Name = "SuperAdmin"
-        //    };
-        //   await _roleManager.CreateAsync(role);
-        //   await _roleManager.CreateAsync(role1);
-        //    await _roleManager.CreateAsync(role2);
-        //    return RedirectToAction("index", "home");
-        //}
+                var result = await _userManager.CreateAsync(superadmin, "Superadmin123!");
+                if (result.Succeeded)
+                {
+                    await _userManager.AddToRoleAsync(superadmin, "SuperAdmin");
+                    return Json("SuperAdmin user created and assigned to SuperAdmin role.");
+                }
+                else
+                {
+                    return Json(result.Errors);
+                }
+            }
+            return Json("User already exists.");
+        }
+
+        
+        public async Task<IActionResult> CreateRoles()
+        {
+            if (!await _roleManager.RoleExistsAsync("User"))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("User"));
+            }
+            if (!await _roleManager.RoleExistsAsync("Admin"))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("Admin"));
+            }
+            if (!await _roleManager.RoleExistsAsync("SuperAdmin"))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("SuperAdmin"));
+            }
+
+            return Json("Roles Created Successfully");
+        }
+        */
     }
 }

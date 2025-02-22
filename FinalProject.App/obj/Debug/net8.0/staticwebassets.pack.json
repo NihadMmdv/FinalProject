@@ -29,8 +29,16 @@
       "PackagePath": "staticwebassets\\Images\\Associates\\063ce013-68f8-4514-b775-3d8049e81ae7toyota.jpg"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\14fe2850-3d97-4562-aeaa-4e38ed643a59ddc972a8-7545-4ef0-8a65-f150a80dd295bmw.png",
+      "PackagePath": "staticwebassets\\Images\\Associates\\14fe2850-3d97-4562-aeaa-4e38ed643a59ddc972a8-7545-4ef0-8a65-f150a80dd295bmw.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\19ce2018-170d-400e-93bf-95af220ff28aVolkswagen.webp",
       "PackagePath": "staticwebassets\\Images\\Associates\\19ce2018-170d-400e-93bf-95af220ff28aVolkswagen.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\214ca0ec-593c-4d3f-8fa3-13000c1eaad38e559e03-6c03-4099-b11e-f51f84ec10behyundai.png",
+      "PackagePath": "staticwebassets\\Images\\Associates\\214ca0ec-593c-4d3f-8fa3-13000c1eaad38e559e03-6c03-4099-b11e-f51f84ec10behyundai.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\3371798b-7477-4717-8582-2d6ee2780eb3renault.png",
@@ -45,6 +53,10 @@
       "PackagePath": "staticwebassets\\Images\\Associates\\4134ecab-a8ed-4cf8-a464-c6670053a664code.webp"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\6648a894-6255-46c5-930f-efb2e3bbeb8ddab5fcac-8ebf-4f0e-b0eb-408220befee3chevy.png",
+      "PackagePath": "staticwebassets\\Images\\Associates\\6648a894-6255-46c5-930f-efb2e3bbeb8ddab5fcac-8ebf-4f0e-b0eb-408220befee3chevy.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\6c898f1b-d5f7-4f1c-ad36-9741e41f010baudi.webp",
       "PackagePath": "staticwebassets\\Images\\Associates\\6c898f1b-d5f7-4f1c-ad36-9741e41f010baudi.webp"
     },
@@ -55,6 +67,10 @@
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\78821df3-e8a8-4e87-8ed3-016d59345ae6download.jpg",
       "PackagePath": "staticwebassets\\Images\\Associates\\78821df3-e8a8-4e87-8ed3-016d59345ae6download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\80a51d3d-f548-4368-9757-a2356c33af6933cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png",
+      "PackagePath": "staticwebassets\\Images\\Associates\\80a51d3d-f548-4368-9757-a2356c33af6933cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\8d5adcf7-00e5-4b99-886d-0e23099b7c1alexus.png",
@@ -89,6 +105,10 @@
       "PackagePath": "staticwebassets\\Images\\Associates\\cbd2bb70-7b86-4218-9095-db7108c24a49toyota.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\d974db9b-314f-4bbf-a68f-e79f3791ac24c18ec833-10a4-47f6-9c76-21f748b3d0a1mers.png",
+      "PackagePath": "staticwebassets\\Images\\Associates\\d974db9b-314f-4bbf-a68f-e79f3791ac24c18ec833-10a4-47f6-9c76-21f748b3d0a1mers.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\dab5fcac-8ebf-4f0e-b0eb-408220befee3chevy.png",
       "PackagePath": "staticwebassets\\Images\\Associates\\dab5fcac-8ebf-4f0e-b0eb-408220befee3chevy.png"
     },
@@ -109,12 +129,24 @@
       "PackagePath": "staticwebassets\\Images\\Associates\\f4e0069e-3158-4224-a28c-baa972bff31ftoyota.webp"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Associates\\f9d1ca4c-a6c3-4ff0-890c-c0997d80385002e9bd55-24a7-4067-b695-e56b33d39761opel.png",
+      "PackagePath": "staticwebassets\\Images\\Associates\\f9d1ca4c-a6c3-4ff0-890c-c0997d80385002e9bd55-24a7-4067-b695-e56b33d39761opel.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\0983b816-11b0-4977-a545-f1b97bdb4e80car.jpg",
       "PackagePath": "staticwebassets\\Images\\Blogs\\0983b816-11b0-4977-a545-f1b97bdb4e80car.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\0ac3d93a-003a-40bd-a9c6-85e0ae2c95c8download (1).jpg",
       "PackagePath": "staticwebassets\\Images\\Blogs\\0ac3d93a-003a-40bd-a9c6-85e0ae2c95c8download (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\0e58af1d-aaa2-4569-8d7d-15d11a846b4ab231a791-3ba9-49ff-b2de-48f9056a84872023_kia_niro_4dr-suv_sx-touring_fq_oem_1_1280.avif",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\0e58af1d-aaa2-4569-8d7d-15d11a846b4ab231a791-3ba9-49ff-b2de-48f9056a84872023_kia_niro_4dr-suv_sx-touring_fq_oem_1_1280.avif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\15e13a4c-7daf-4f52-959a-a92285448f2381636557-dbb8-4217-83bd-7c98959c8538toyota.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\15e13a4c-7daf-4f52-959a-a92285448f2381636557-dbb8-4217-83bd-7c98959c8538toyota.jpeg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\242e3741-bc18-46d8-bf87-d894f3be686cdownload.jpg",
@@ -149,12 +181,12 @@
       "PackagePath": "staticwebassets\\Images\\Blogs\\9a535256-fa2d-43c7-8e92-a4d4df757430download.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\1ad633d5-e9dc-4f94-8a29-5fe8502674b4images (1).jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\1ad633d5-e9dc-4f94-8a29-5fe8502674b4images (1).jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\19ee7d64-cac0-4632-baee-d1741af30400e8017a4e-2816-4e85-8ce3-c868cdff9c967bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\19ee7d64-cac0-4632-baee-d1741af30400e8017a4e-2816-4e85-8ce3-c868cdff9c967bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\3417e718-e508-4707-ac44-a025d86fd27dimages (1).jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\3417e718-e508-4707-ac44-a025d86fd27dimages (1).jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\1ad633d5-e9dc-4f94-8a29-5fe8502674b4images (1).jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\1ad633d5-e9dc-4f94-8a29-5fe8502674b4images (1).jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\47aeb771-56e1-476d-9094-ce5dcc2580b9download.jpg",
@@ -169,40 +201,40 @@
       "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\7bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\874fde1a-0c4e-4e6a-a1d4-dbc33b05daa2avatar.png",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\874fde1a-0c4e-4e6a-a1d4-dbc33b05daa2avatar.png"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\afbe356b-de42-4a04-95e2-9ce0a4c7112d7bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\afbe356b-de42-4a04-95e2-9ce0a4c7112d7bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\87ea0652-1e4e-4896-9e66-c43801369811nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\87ea0652-1e4e-4896-9e66-c43801369811nijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\b1b814ef-a753-4220-9f44-61a956014b7378bffd7f-9355-43da-b833-a14d46a6de07images (2).jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\b1b814ef-a753-4220-9f44-61a956014b7378bffd7f-9355-43da-b833-a14d46a6de07images (2).jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\b6c87405-e688-46b9-bd02-03e8ee18aa57nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\b6c87405-e688-46b9-bd02-03e8ee18aa57nijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\b52a28ff-a065-48a2-bd00-4a2eed84cc9f37eb9fef-0816-4aa3-bb74-d9458d28e449photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\b52a28ff-a065-48a2-bd00-4a2eed84cc9f37eb9fef-0816-4aa3-bb74-d9458d28e449photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\c2a2d0ad-4400-4267-b604-40265c460145images (2).jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\c2a2d0ad-4400-4267-b604-40265c460145images (2).jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\d3f00472-4840-4b8a-9fd9-9a3e5f09d88b37eb9fef-0816-4aa3-bb74-d9458d28e449photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\d3f00472-4840-4b8a-9fd9-9a3e5f09d88b37eb9fef-0816-4aa3-bb74-d9458d28e449photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\c99a528e-22e8-4379-a4b6-767e26ee4fe1IMG_5237.jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\c99a528e-22e8-4379-a4b6-767e26ee4fe1IMG_5237.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\d4ff09f6-31cc-4429-9d23-0fe566446d0037eb9fef-0816-4aa3-bb74-d9458d28e449photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\d4ff09f6-31cc-4429-9d23-0fe566446d0037eb9fef-0816-4aa3-bb74-d9458d28e449photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\dd9f6db3-64aa-4442-8ec9-23eed566369fnijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\dd9f6db3-64aa-4442-8ec9-23eed566369fnijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\e65c0056-acd5-464a-bd1b-2a686869118b7bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\e65c0056-acd5-464a-bd1b-2a686869118b7bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\fc9137a6-03e3-4bd7-a1b6-6d452975f57bIMG_8387.jpg",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\fc9137a6-03e3-4bd7-a1b6-6d452975f57bIMG_8387.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\Authors\\e8017a4e-2816-4e85-8ce3-c868cdff9c967bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\Authors\\e8017a4e-2816-4e85-8ce3-c868cdff9c967bcd8de6-fe20-4406-8a8e-957d221d0355photo.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\ad576a9c-2650-4f1a-8b6b-5bb5f8b55476images.jpg",
       "PackagePath": "staticwebassets\\Images\\Blogs\\ad576a9c-2650-4f1a-8b6b-5bb5f8b55476images.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\b231a791-3ba9-49ff-b2de-48f9056a84872023_kia_niro_4dr-suv_sx-touring_fq_oem_1_1280.avif",
-      "PackagePath": "staticwebassets\\Images\\Blogs\\b231a791-3ba9-49ff-b2de-48f9056a84872023_kia_niro_4dr-suv_sx-touring_fq_oem_1_1280.avif"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\bbc78f9f-f91d-48ca-bf14-53085b4fb67253410ef2-a128-4a3e-b83b-2eda66d5eec2kia.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blogs\\bbc78f9f-f91d-48ca-bf14-53085b4fb67253410ef2-a128-4a3e-b83b-2eda66d5eec2kia.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Blogs\\ecfb2574-1c87-471b-a4fb-9f43bacbec2eLamborghini_Miura_Concept.jpg",
@@ -213,8 +245,16 @@
       "PackagePath": "staticwebassets\\Images\\Blogs\\f2855a53-390c-46ab-a4fc-e9a47fb4a52ehonda.jpg"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\011f830a-49d4-4b36-a9d0-dd7ca9ced4263aeff695-c653-463c-a661-01e431afe536hyundai.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\011f830a-49d4-4b36-a9d0-dd7ca9ced4263aeff695-c653-463c-a661-01e431afe536hyundai.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\069dc472-aa8d-4b2d-a3dc-e1c9b4c593a9lada.png",
       "PackagePath": "staticwebassets\\Images\\Brands\\069dc472-aa8d-4b2d-a3dc-e1c9b4c593a9lada.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\17a8fa94-a718-4468-973c-de5e1da31a92432e572c-6bc1-4d9a-91a6-916cf2c6c411download.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\17a8fa94-a718-4468-973c-de5e1da31a92432e572c-6bc1-4d9a-91a6-916cf2c6c411download.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\21b21d70-d7d7-48c9-9722-8df74db1e542bmw.png",
@@ -225,12 +265,24 @@
       "PackagePath": "staticwebassets\\Images\\Brands\\30f29c6f-9e28-4d9a-999b-e0393cb6a4f1land-rover.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\311fcbe5-818e-4d42-b70f-1ae4fbc7700a74f38bba-a919-4086-a627-da77d1be3795chevy.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\311fcbe5-818e-4d42-b70f-1ae4fbc7700a74f38bba-a919-4086-a627-da77d1be3795chevy.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\33cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png",
       "PackagePath": "staticwebassets\\Images\\Brands\\33cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\35d78d53-2ba8-40e2-9743-c548e20736d471f2f4cb-a85d-432c-8087-10a57a153662geely.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\35d78d53-2ba8-40e2-9743-c548e20736d471f2f4cb-a85d-432c-8087-10a57a153662geely.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\3aeff695-c653-463c-a661-01e431afe536hyundai.png",
       "PackagePath": "staticwebassets\\Images\\Brands\\3aeff695-c653-463c-a661-01e431afe536hyundai.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\432427ea-0397-4ea6-8354-703bd2e532f333cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\432427ea-0397-4ea6-8354-703bd2e532f333cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\432e572c-6bc1-4d9a-91a6-916cf2c6c411download.png",
@@ -245,12 +297,28 @@
       "PackagePath": "staticwebassets\\Images\\Brands\\71f2f4cb-a85d-432c-8087-10a57a153662geely.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\73da9040-953c-4994-89b9-db9133266ed230f29c6f-9e28-4d9a-999b-e0393cb6a4f1land-rover.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\73da9040-953c-4994-89b9-db9133266ed230f29c6f-9e28-4d9a-999b-e0393cb6a4f1land-rover.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\74f38bba-a919-4086-a627-da77d1be3795chevy.png",
       "PackagePath": "staticwebassets\\Images\\Brands\\74f38bba-a919-4086-a627-da77d1be3795chevy.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\8118bd35-3770-41bc-892c-3a391adad61cVolkswagen.webp",
       "PackagePath": "staticwebassets\\Images\\Brands\\8118bd35-3770-41bc-892c-3a391adad61cVolkswagen.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\826c1e34-4854-4177-8e29-5934f2f99d81e4f45c0c-7434-499b-a0d3-4752b2b0dcf4toyota.jpg",
+      "PackagePath": "staticwebassets\\Images\\Brands\\826c1e34-4854-4177-8e29-5934f2f99d81e4f45c0c-7434-499b-a0d3-4752b2b0dcf4toyota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\8600e3be-4449-4ba9-a263-7c8ae22a0fa7e51d5bcc-6cf8-4e17-9dfd-a7418bf8e6balexus.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\8600e3be-4449-4ba9-a263-7c8ae22a0fa7e51d5bcc-6cf8-4e17-9dfd-a7418bf8e6balexus.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\926e037b-0dbe-4ed4-837c-80f8386c71938118bd35-3770-41bc-892c-3a391adad61cVolkswagen.webp",
+      "PackagePath": "staticwebassets\\Images\\Brands\\926e037b-0dbe-4ed4-837c-80f8386c71938118bd35-3770-41bc-892c-3a391adad61cVolkswagen.webp"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\94d61c2d-d67f-44d5-bac7-f767c98a36ffhyundai.png",
@@ -261,6 +329,14 @@
       "PackagePath": "staticwebassets\\Images\\Brands\\a0a1ba87-f693-493e-ba06-76b6ab778e9dopel.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\a4d50a45-6113-472c-81b5-b695228a5100c865cbc6-5a9f-4987-b7b5-a2c0513f68fcaudi.webp",
+      "PackagePath": "staticwebassets\\Images\\Brands\\a4d50a45-6113-472c-81b5-b695228a5100c865cbc6-5a9f-4987-b7b5-a2c0513f68fcaudi.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\a4f23c19-f57d-4352-9327-55ebfb85b24aa0a1ba87-f693-493e-ba06-76b6ab778e9dopel.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\a4f23c19-f57d-4352-9327-55ebfb85b24aa0a1ba87-f693-493e-ba06-76b6ab778e9dopel.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\b189cd8d-e2db-4b2c-887b-3ff0d69f5cd6honda.svg",
       "PackagePath": "staticwebassets\\Images\\Brands\\b189cd8d-e2db-4b2c-887b-3ff0d69f5cd6honda.svg"
     },
@@ -269,8 +345,24 @@
       "PackagePath": "staticwebassets\\Images\\Brands\\c20a950d-c013-471d-8050-ff713bfedec4kia.svg"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\c2e5c79b-84a1-4a5e-a3f6-1e73d7d80736069dc472-aa8d-4b2d-a3dc-e1c9b4c593a9lada.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\c2e5c79b-84a1-4a5e-a3f6-1e73d7d80736069dc472-aa8d-4b2d-a3dc-e1c9b4c593a9lada.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\c312cc9e-f89d-458e-90bc-b73dae2fbe8b21b21d70-d7d7-48c9-9722-8df74db1e542bmw.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\c312cc9e-f89d-458e-90bc-b73dae2fbe8b21b21d70-d7d7-48c9-9722-8df74db1e542bmw.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\c865cbc6-5a9f-4987-b7b5-a2c0513f68fcaudi.webp",
       "PackagePath": "staticwebassets\\Images\\Brands\\c865cbc6-5a9f-4987-b7b5-a2c0513f68fcaudi.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\dc890bda-eb00-485b-adf4-58e33b1603aee352c50d-b6f7-458c-8897-e280694b8fcevolvo.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\dc890bda-eb00-485b-adf4-58e33b1603aee352c50d-b6f7-458c-8897-e280694b8fcevolvo.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\ddd8d3d6-0dbe-4192-9f01-1c93d85398cf33cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png",
+      "PackagePath": "staticwebassets\\Images\\Brands\\ddd8d3d6-0dbe-4192-9f01-1c93d85398cf33cc7e31-8997-4df0-b4f5-689b8fe32f26mers.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Brands\\e352c50d-b6f7-458c-8897-e280694b8fcevolvo.png",
@@ -455,6 +547,10 @@
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Cars\\5fad4380-a11f-4bfa-8ba9-4f5a19e1553dphoto_2_2023-08-24_11-01-47.jpg",
       "PackagePath": "staticwebassets\\Images\\Cars\\5fad4380-a11f-4bfa-8ba9-4f5a19e1553dphoto_2_2023-08-24_11-01-47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Cars\\61be7938-f22b-4534-b5d2-2aead9f562fa82570_03Jwy_e00fC2mfxpGD9upA.jpg",
+      "PackagePath": "staticwebassets\\Images\\Cars\\61be7938-f22b-4534-b5d2-2aead9f562fa82570_03Jwy_e00fC2mfxpGD9upA.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Cars\\65a0d707-233f-445b-9bc3-10b39f927152cruze.jpeg",
@@ -753,6 +849,10 @@
       "PackagePath": "staticwebassets\\Images\\Countries\\30d27013-4097-4911-893a-b78a7db2aefaturkey.avif"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\668ff15d-93fa-48f8-b376-175ba9961c6e03278da5-399c-4fb9-9291-ae9989a05a69korae.webp",
+      "PackagePath": "staticwebassets\\Images\\Countries\\668ff15d-93fa-48f8-b376-175ba9961c6e03278da5-399c-4fb9-9291-ae9989a05a69korae.webp"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\75de4250-5651-4320-98dc-bd0481d0c52busa.webp",
       "PackagePath": "staticwebassets\\Images\\Countries\\75de4250-5651-4320-98dc-bd0481d0c52busa.webp"
     },
@@ -761,8 +861,20 @@
       "PackagePath": "staticwebassets\\Images\\Countries\\8f22d882-8495-4e69-96aa-48d45842c376russia.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\b2699503-84ce-4736-80ce-b09929dc8c6475de4250-5651-4320-98dc-bd0481d0c52busa.webp",
+      "PackagePath": "staticwebassets\\Images\\Countries\\b2699503-84ce-4736-80ce-b09929dc8c6475de4250-5651-4320-98dc-bd0481d0c52busa.webp"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\b5a7a98c-e1aa-48ad-9d55-2c70cd6bb84dturkey.png",
       "PackagePath": "staticwebassets\\Images\\Countries\\b5a7a98c-e1aa-48ad-9d55-2c70cd6bb84dturkey.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\c8d1d194-6a4a-407d-8838-ed9a280e08888f22d882-8495-4e69-96aa-48d45842c376russia.png",
+      "PackagePath": "staticwebassets\\Images\\Countries\\c8d1d194-6a4a-407d-8838-ed9a280e08888f22d882-8495-4e69-96aa-48d45842c376russia.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\ccbf2a42-8f48-4b1d-ae31-82799391bc3db5a7a98c-e1aa-48ad-9d55-2c70cd6bb84dturkey.png",
+      "PackagePath": "staticwebassets\\Images\\Countries\\ccbf2a42-8f48-4b1d-ae31-82799391bc3db5a7a98c-e1aa-48ad-9d55-2c70cd6bb84dturkey.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Countries\\efbf314d-395a-41db-85ae-1759c3f377degeorgia.png",
@@ -805,20 +917,12 @@
       "PackagePath": "staticwebassets\\Images\\Document_files\\home.js.download"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Document_files\\logo_white.png",
-      "PackagePath": "staticwebassets\\Images\\Document_files\\logo_white.png"
-    },
-    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Document_files\\main.css",
       "PackagePath": "staticwebassets\\Images\\Document_files\\main.css"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\13d50036-972e-43b1-9140-4cbed4a6f12amercedes-amg-cls-63_1.webp",
       "PackagePath": "staticwebassets\\Images\\Settings\\13d50036-972e-43b1-9140-4cbed4a6f12amercedes-amg-cls-63_1.webp"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\16419abd-6161-4fa6-b15a-39b09198e6aaLogo.png",
-      "PackagePath": "staticwebassets\\Images\\Settings\\16419abd-6161-4fa6-b15a-39b09198e6aaLogo.png"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\1ae0e726-0411-4a58-85a6-db82ed9ffdd6bmw.jpg",
@@ -833,20 +937,20 @@
       "PackagePath": "staticwebassets\\Images\\Settings\\9ed748d3-1c95-4528-90ea-58eb72371548images (1).jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\a04f743f-dfb3-431b-9b3b-e78ccfe1f1afseo-logo.jpg",
-      "PackagePath": "staticwebassets\\Images\\Settings\\a04f743f-dfb3-431b-9b3b-e78ccfe1f1afseo-logo.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\TurboBid_Logo.png",
+      "PackagePath": "staticwebassets\\Images\\Settings\\TurboBid_Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\TurboBid_Logo.webp",
+      "PackagePath": "staticwebassets\\Images\\Settings\\TurboBid_Logo.webp"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\b689a752-ce01-48f5-84d4-388241e82424cls.jpg",
       "PackagePath": "staticwebassets\\Images\\Settings\\b689a752-ce01-48f5-84d4-388241e82424cls.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\mLogo.jpg",
-      "PackagePath": "staticwebassets\\Images\\Settings\\mLogo.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\mWhite.jpg",
-      "PackagePath": "staticwebassets\\Images\\Settings\\mWhite.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Settings\\photo-why-pic.jpg",
+      "PackagePath": "staticwebassets\\Images\\Settings\\photo-why-pic.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\03b2de15-b046-4988-a377-1a9bf5a108b9mercedes-benz-mercedes-e-class-vath-wallpaper-preview.jpg",
@@ -859,6 +963,14 @@
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\146fdffb-98ed-4bd0-87b9-2e782ad3ca0de39.jpg",
       "PackagePath": "staticwebassets\\Images\\Sliders\\146fdffb-98ed-4bd0-87b9-2e782ad3ca0de39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\18ab888a-8be4-4c46-ade3-32844b600825WhatsApp Image 2025-02-21 at 18.12.28_e5d11c64.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\18ab888a-8be4-4c46-ade3-32844b600825WhatsApp Image 2025-02-21 at 18.12.28_e5d11c64.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\2efe768e-2e15-4af4-9314-c6b8cee19a09WhatsApp Image 2025-02-21 at 18.12.28_4829dd8e.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\2efe768e-2e15-4af4-9314-c6b8cee19a09WhatsApp Image 2025-02-21 at 18.12.28_4829dd8e.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\33aa1208-a400-4ad3-bc9e-b7cd7aa5305dphoto_2_2023-08-24_11-01-47.jpg",
@@ -889,160 +1001,108 @@
       "PackagePath": "staticwebassets\\Images\\Sliders\\88a4d961-2f6e-42ac-b75d-09c0df4355abimages (1).jpg"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\8d7a4cef-2b59-41d2-b162-130309bbfddb03b2de15-b046-4988-a377-1a9bf5a108b9mercedes-benz-mercedes-e-class-vath-wallpaper-preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\8d7a4cef-2b59-41d2-b162-130309bbfddb03b2de15-b046-4988-a377-1a9bf5a108b9mercedes-benz-mercedes-e-class-vath-wallpaper-preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\8f3ec9da-1479-4b5c-b37c-b5d1abcf8f3de1c2ee96-e85b-41c9-a644-9469118df9a6e39.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\8f3ec9da-1479-4b5c-b37c-b5d1abcf8f3de1c2ee96-e85b-41c9-a644-9469118df9a6e39.jpg"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\90dafd34-e162-4c1e-befb-fa35b5690eecclas.png",
       "PackagePath": "staticwebassets\\Images\\Sliders\\90dafd34-e162-4c1e-befb-fa35b5690eecclas.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\9c781d0a-0552-4719-8711-c8e47b12073aWhatsApp Image 2025-02-21 at 18.12.29_3ec0844b.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\9c781d0a-0552-4719-8711-c8e47b12073aWhatsApp Image 2025-02-21 at 18.12.29_3ec0844b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\9d970415-d69e-4f1a-b641-2fd11d663dfd4b25d063-4feb-4622-bfdb-50b2b11d5e902020-lexus-lx570-sport-1-1564416151.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\9d970415-d69e-4f1a-b641-2fd11d663dfd4b25d063-4feb-4622-bfdb-50b2b11d5e902020-lexus-lx570-sport-1-1564416151.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.28_4829dd8e.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.28_4829dd8e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.28_c26f2d87.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.28_c26f2d87.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.28_e5d11c64.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.28_e5d11c64.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.29_3ec0844b.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\WhatsApp Image 2025-02-21 at 18.12.29_3ec0844b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\a053925a-3abb-4a91-9085-6ad678b62f007d8c587b-2777-40a8-9431-e5ce01c1d31cIMG_8338.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\a053925a-3abb-4a91-9085-6ad678b62f007d8c587b-2777-40a8-9431-e5ce01c1d31cIMG_8338.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\ba4481f5-9305-42db-885b-013ca5c4339bcar.jpg",
       "PackagePath": "staticwebassets\\Images\\Sliders\\ba4481f5-9305-42db-885b-013ca5c4339bcar.jpg"
     },
     {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\c9b794b0-d9e5-49d7-b640-768e04def6355db79db9-2c45-41a6-94d0-b0b0fc0fde6e01-E63-AMG_1080x_ccec43cf-cda1-4e99-8ea8-1b627a6b669a_1024x1024.webp",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\c9b794b0-d9e5-49d7-b640-768e04def6355db79db9-2c45-41a6-94d0-b0b0fc0fde6e01-E63-AMG_1080x_ccec43cf-cda1-4e99-8ea8-1b627a6b669a_1024x1024.webp"
+    },
+    {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\e1c2ee96-e85b-41c9-a644-9469118df9a6e39.jpg",
       "PackagePath": "staticwebassets\\Images\\Sliders\\e1c2ee96-e85b-41c9-a644-9469118df9a6e39.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\0aa4f4f6-bfef-434e-87f0-55a4dd625e0fIMG_8338.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\0aa4f4f6-bfef-434e-87f0-55a4dd625e0fIMG_8338.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\e29f22ef-140c-4548-82a7-327426b3519901-featured.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\e29f22ef-140c-4548-82a7-327426b3519901-featured.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\1b891ee0-026c-498b-91d1-6811df25e524avatar.png",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\1b891ee0-026c-498b-91d1-6811df25e524avatar.png"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Sliders\\mercedes-eclass.jpg",
+      "PackagePath": "staticwebassets\\Images\\Sliders\\mercedes-eclass.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\77197af3-bca9-4224-9b5b-a9d98a2d1117PHOTO-2023-04-03-09-08-11.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\77197af3-bca9-4224-9b5b-a9d98a2d1117PHOTO-2023-04-03-09-08-11.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\14125ea3-06e3-4df1-bea0-275e953fcb8bnihad.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staffs\\14125ea3-06e3-4df1-bea0-275e953fcb8bnihad.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\d0366ea7-1403-4e5c-ae2f-c90e39fe3d99IMG_5237.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\d0366ea7-1403-4e5c-ae2f-c90e39fe3d99IMG_5237.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\762e49c4-4066-4d5d-8c7f-e20d638827c7nihad.jpg",
+      "PackagePath": "staticwebassets\\Images\\Staffs\\762e49c4-4066-4d5d-8c7f-e20d638827c7nihad.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\d995971f-3c50-4ae8-b781-ea43919d473bcar1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\d995971f-3c50-4ae8-b781-ea43919d473bcar1.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\1a66eb3d-abc3-44e3-9055-f96229e65508nihad.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\1a66eb3d-abc3-44e3-9055-f96229e65508nihad.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\df677bb2-289f-412c-93bf-0b01ed315a75photo_2023-08-18_17-34-08.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\df677bb2-289f-412c-93bf-0b01ed315a75photo_2023-08-18_17-34-08.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\4c1a63ef-33ff-4206-838d-de01c62f723eface3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\4c1a63ef-33ff-4206-838d-de01c62f723eface3.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\df928698-f403-471c-b007-87ee9dc94300nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\df928698-f403-471c-b007-87ee9dc94300nijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\5a10cbe8-74ab-49f6-b162-d77c1404aef3nihad.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\5a10cbe8-74ab-49f6-b162-d77c1404aef3nihad.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Staffs\\fb1781cc-cdae-41de-b5a7-b297b7adf45bcar.jpg",
-      "PackagePath": "staticwebassets\\Images\\Staffs\\fb1781cc-cdae-41de-b5a7-b297b7adf45bcar.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\95139e4a-a7de-40e6-990d-332234b82b0fface16.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\95139e4a-a7de-40e6-990d-332234b82b0fface16.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\0b7d3a07-772c-4fa5-b79c-ea96d64e766dIMG_8338.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\0b7d3a07-772c-4fa5-b79c-ea96d64e766dIMG_8338.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\d5d46a05-3d7d-4cba-a62a-3d8a9342ef80nihad.jpg",
+      "PackagePath": "staticwebassets\\Images\\Users\\d5d46a05-3d7d-4cba-a62a-3d8a9342ef80nihad.jpg"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\151a8d6d-c6bf-4eed-af29-5ff7f4009637IMG_2950.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\151a8d6d-c6bf-4eed-af29-5ff7f4009637IMG_2950.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\dgsdh.webp",
+      "PackagePath": "staticwebassets\\Images\\Users\\dgsdh.webp"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\1c4e0ae5-3936-4c4d-9270-03d402edeb10nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\1c4e0ae5-3936-4c4d-9270-03d402edeb10nijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\jeryeatdsdysdf.webp",
+      "PackagePath": "staticwebassets\\Images\\Users\\jeryeatdsdysdf.webp"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\1f8f0bb8-abbe-4a43-bc28-2f2a45ff3c6dnijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\1f8f0bb8-abbe-4a43-bc28-2f2a45ff3c6dnijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\tudsghjdbgjks.webp",
+      "PackagePath": "staticwebassets\\Images\\Users\\tudsghjdbgjks.webp"
     },
     {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\2e792e1b-1faa-4351-819e-c715b7758995IMG_2950.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\2e792e1b-1faa-4351-819e-c715b7758995IMG_2950.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\30e6348d-1525-4f54-b968-7255d8cada55IMG_2950.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\30e6348d-1525-4f54-b968-7255d8cada55IMG_2950.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\35a818d5-a2d8-44cb-b7d9-86a201ce9a0anijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\35a818d5-a2d8-44cb-b7d9-86a201ce9a0anijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\41c90d0f-6c99-42a8-b325-59d56a58dab9m.png",
-      "PackagePath": "staticwebassets\\Images\\Users\\41c90d0f-6c99-42a8-b325-59d56a58dab9m.png"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\44a41c40-75c6-45ff-8ca5-c7e31517f531IMG_6664.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\44a41c40-75c6-45ff-8ca5-c7e31517f531IMG_6664.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\53bba9c9-c3ee-43bd-8438-013b8f77b3d9nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\53bba9c9-c3ee-43bd-8438-013b8f77b3d9nijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\71474973-84e3-47eb-bd9f-4df539796cabphoto_1_2023-08-24_11-01-47.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\71474973-84e3-47eb-bd9f-4df539796cabphoto_1_2023-08-24_11-01-47.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\853c55cd-4a06-45da-84eb-7d70c20b2ab8nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\853c55cd-4a06-45da-84eb-7d70c20b2ab8nijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\8c6ff7f2-0451-4c28-853b-5ceb64449baanijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\8c6ff7f2-0451-4c28-853b-5ceb64449baanijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\90898eb6-93ff-451f-93c4-483724da5e33Img.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\90898eb6-93ff-451f-93c4-483724da5e33Img.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\User-avatar.svg.png",
-      "PackagePath": "staticwebassets\\Images\\Users\\User-avatar.svg.png"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\admin.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\admin.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\b9a1b44c-455b-4b96-9b89-5c5991d75d80car3.avif",
-      "PackagePath": "staticwebassets\\Images\\Users\\b9a1b44c-455b-4b96-9b89-5c5991d75d80car3.avif"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\bcfee8ce-9560-47e0-a68a-dc241a8e343bIMG_2950.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\bcfee8ce-9560-47e0-a68a-dc241a8e343bIMG_2950.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\bea87e55-a406-4348-90bb-4a64cda5f599IMG_2644.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\bea87e55-a406-4348-90bb-4a64cda5f599IMG_2644.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\c52c137c-8b04-4219-bf19-5c2cbaa80bf7car2.jpeg",
-      "PackagePath": "staticwebassets\\Images\\Users\\c52c137c-8b04-4219-bf19-5c2cbaa80bf7car2.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\cc61093c-3b65-4135-ae9a-1f27a65ddf4cnijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\cc61093c-3b65-4135-ae9a-1f27a65ddf4cnijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\cfad3cd0-480c-443a-964c-13c98ce39cd6IMG_2950.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\cfad3cd0-480c-443a-964c-13c98ce39cd6IMG_2950.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\d3b63036-e762-4e66-b9be-3469232af19davatar.png",
-      "PackagePath": "staticwebassets\\Images\\Users\\d3b63036-e762-4e66-b9be-3469232af19davatar.png"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\deba7bd7-fb13-41f4-876e-c47f2b8cf109nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\deba7bd7-fb13-41f4-876e-c47f2b8cf109nijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\e5627343-787f-4c0f-8146-544914e72f81IMG_5237.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\e5627343-787f-4c0f-8146-544914e72f81IMG_5237.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\e89c047b-5dfe-4071-a4de-714a4aec78aenijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\e89c047b-5dfe-4071-a4de-714a4aec78aenijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\fbcfba13-c108-4de8-ba04-dd8372b1fa78nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\fbcfba13-c108-4de8-ba04-dd8372b1fa78nijat.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\ffded672-2b58-45ae-b5d5-21252b1bca67nijat.jpg",
-      "PackagePath": "staticwebassets\\Images\\Users\\ffded672-2b58-45ae-b5d5-21252b1bca67nijat.jpg"
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\Users\\wretrytuyrerwrsdfgrt.webp",
+      "PackagePath": "staticwebassets\\Images\\Users\\wretrytuyrerwrsdfgrt.webp"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\avatar.png",
@@ -1075,6 +1135,10 @@
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\header.jpg",
       "PackagePath": "staticwebassets\\Images\\header.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\nihad.jpg",
+      "PackagePath": "staticwebassets\\Images\\nihad.jpg"
     },
     {
       "Id": "C:\\Users\\Lenovo 2024\\Desktop\\Code Academy\\FinalProject\\FinalProject.App\\wwwroot\\Images\\serviceSection.jpg",

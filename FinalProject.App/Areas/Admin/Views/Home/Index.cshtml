@@ -94,7 +94,14 @@
                                         <i class="mdi mdi-cash-usd me-3 icon-lg text-danger"></i>
                                         <div class="d-flex flex-column justify-content-around">
                                             <small class="mb-1 text-muted">Max Bid</small>
-                                            <h5 class="me-2 mb-0" id="maxBid">$@Model.Bids.OrderByDescending(x=>x.Count).FirstOrDefault().Count</h5>
+                                            @{
+                                                var maxBid = Model.Bids?.OrderByDescending(x => x.Count).FirstOrDefault();
+                                            }
+
+                                            <h5 class="me-2 mb-0" id="maxBid">
+                                                @(maxBid != null ? $"${maxBid.Count}" : "No Bids Yet")
+                                            </h5>
+
                                         </div>
                                     </div>
                                 </div>

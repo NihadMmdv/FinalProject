@@ -100,15 +100,28 @@
                                         <div class="wrap-columns">
                                             <div class="kc-column">
                                                 <div>
-                                                    <div class="text" style="word-wrap:break-word;">
-                                                        <p>
-                                                      @Model.Car.Description.Substring(0,250)
-                                                        </p>
-                                                        <p>
-                                                            @Model.Car.Description.Substring(250,Model.Car.Description.Length-250)
-
-                                                        </p>
-                                                    </div>
+                                                    @if (!string.IsNullOrEmpty(Model.Car.Description))
+                                                    {
+                                                        if (Model.Car.Description.Length > 250)
+                                                        {
+                                                            <p>
+                                                                @Model.Car.Description.Substring(0, 250)
+                                                            </p>
+                                                            <p>
+                                                                @Model.Car.Description.Substring(250)
+                                                            </p>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p>
+                                                                @Model.Car.Description
+                                                            </p>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <p>No description available.</p>
+                                                    }
                                                     <div class="kc-row-inner">
                                                         <div class="kc-column-inner">
                                                             <div class="text">

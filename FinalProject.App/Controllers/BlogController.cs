@@ -141,7 +141,7 @@ namespace FinalProject.App.Controllers
             {
                 result = await _carService.GetAsync(carId);
                 Car car = (Car)result.itemView;
-                await _emailService.SendMail("nicatsoltanli03@gmail.com", car.AppUser.Email,
+                await _emailService.SendMail("turbobidofficial@gmail.com", car.AppUser.Email,
                    "New Comment", "You have 1 new comment on your Car ", null, car.AppUser.Name + " " + car.AppUser.Surname);
             }
             await _commentService.CreateAsync(dto);

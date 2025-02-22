@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Service.Services.Implementations
 {
-    public class EmailService:IEmailService
+    public class EmailService : IEmailService
     {
         private readonly IWebHostEnvironment _env;
 
@@ -40,11 +40,12 @@ namespace FinalProject.Service.Services.Implementations
             smtp.Port = 587;
             smtp.UseDefaultCredentials = false;
             smtp.EnableSsl = true;
-            smtp.Credentials = new System.Net.NetworkCredential(from, "gmaagjxgczxovsrw");
+            smtp.Credentials = new System.Net.NetworkCredential("nyhhat@gmail.com", "rvlh aelr oibf kgdr");
+
 
             await smtp.SendMailAsync(mm);
         }
-        public async Task SendCarMail(string from, string to, string subject, int bookId, string buyer, string date,Car car)
+        public async Task SendCarMail(string from, string to, string subject, int bookId, string buyer, string date, Car car)
         {
             string body = string.Empty;
             string path = Path.Combine(_env.WebRootPath, "Templates", "carBuying.html");
@@ -53,9 +54,9 @@ namespace FinalProject.Service.Services.Implementations
                 body = SourceReader.ReadToEnd();
             }
             body = body.Replace("{{User}}", buyer);
-            body = body.Replace("{{Id}}",bookId.ToString());
+            body = body.Replace("{{Id}}", bookId.ToString());
             body = body.Replace("{{Date}}", date);
-            body = body.Replace("{{CarName}}", car.Model.Brand.Name +" "+ car.Model.Name);
+            body = body.Replace("{{CarName}}", car.Model.Brand.Name + " " + car.Model.Name);
             body = body.Replace("{{CarId}}", car.Id.ToString());
             body = body.Replace("{{CarYear}}", car.FabricationYear.ToString());
             body = body.Replace("{{CarPrice}}", car.AuctionWinPrice.ToString());
@@ -72,7 +73,8 @@ namespace FinalProject.Service.Services.Implementations
             smtp.Port = 587;
             smtp.UseDefaultCredentials = false;
             smtp.EnableSsl = true;
-            smtp.Credentials = new System.Net.NetworkCredential(from, "gmaagjxgczxovsrw");
+            smtp.Credentials = new System.Net.NetworkCredential("nyhhat@gmail.com", "rvlh aelr oibf kgdr");
+
 
             await smtp.SendMailAsync(mm);
         }
@@ -84,7 +86,7 @@ namespace FinalProject.Service.Services.Implementations
             {
                 body = SourceReader.ReadToEnd();
             }
-            body = body.Replace("{{Model}}", car.Model.Brand.Name + " "+car.Model.Name);
+            body = body.Replace("{{Model}}", car.Model.Brand.Name + " " + car.Model.Name);
             body = body.Replace("{{Year}}", car.FabricationYear.ToString());
             body = body.Replace("{{Auction}}", car.ActionDate.ToString());
             body = body.Replace("{{Motor}}", car.Motor.ToString());
@@ -105,7 +107,8 @@ namespace FinalProject.Service.Services.Implementations
             smtp.Port = 587;
             smtp.UseDefaultCredentials = false;
             smtp.EnableSsl = true;
-            smtp.Credentials = new System.Net.NetworkCredential(from, "gmaagjxgczxovsrw");
+            smtp.Credentials = new System.Net.NetworkCredential("nyhhat@gmail.com", "rvlh aelr oibf kgdr");
+
 
             await smtp.SendMailAsync(mm);
         }

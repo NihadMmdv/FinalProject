@@ -51,18 +51,26 @@ namespace FinalProject.DAL.Data
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-            modelBuilder.Entity<Setting>().HasData(new Setting
-            {
-                Id = 1,
-                PhotoWhy = "default.jpg",  // Ensure a default image exists
-				Address = "address",
-				Email = "email",
-				Logo = "default.jpg",
-				LogoUrl = "logourl",
-				Phone1 = "1234567890",
-				Phone2 = "8734567890",
-				PhotoWhyUrl = "photowhyurl",
-            });
+            modelBuilder.Entity<Country>().HasData(
+			 new Country { Id = 1, Name = "Azerbaijan", FlagImage = "03f58cc2-cb1e-499c-8a19-a4d0aa5bb9dfazerbaijan.png", FlagUrl = "/Images/Countries/03f58cc2-cb1e-499c-8a19-a4d0aa5bb9dfazerbaijan.png" });
+
+            modelBuilder.Entity<UserPricing>().HasData(
+				new UserPricing { Id = 1, Name = "Standart", Price = 0 },
+				new UserPricing { Id = 2, Name = "Premium", Price = 20 },
+				new UserPricing { Id = 3, Name = "Super", Price = 50 });		
+
+            modelBuilder.Entity<Feature>().HasData(
+                new Feature { Id = 1, Name = "24/7 Online Support", Icon = true, UserPricingId = 1 },
+                new Feature { Id = 2, Name = "Selling 1 Car", Icon = true, UserPricingId = 1 },
+                new Feature { Id = 3, Name = "No Daily Info", Icon = false, UserPricingId = 1 },
+
+                new Feature { Id = 4, Name = "Selling 10 Cars", Icon = true, UserPricingId = 2 },
+                new Feature { Id = 5, Name = "Daily Info", Icon = true, UserPricingId = 2 },
+
+                new Feature { Id = 6, Name = "No Limit Selling Car", Icon = true, UserPricingId = 3 },
+                new Feature { Id = 7, Name = "Daily Info", Icon = true, UserPricingId = 3 }
+            );
+
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
 			modelBuilder.ApplyConfiguration(new TagConfiguration());
 			modelBuilder.ApplyConfiguration(new BlogConfiguration());

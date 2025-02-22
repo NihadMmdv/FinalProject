@@ -59,7 +59,7 @@ namespace FinalProject.App.Controllers
                 mail = appUser.Email
             }, protocol: Request.Scheme);
 
-            await _mailService.SendMail("nicatsoltanli03@gmail.com", appUser.Email,
+            await _mailService.SendMail("turbobidoffical@gmail.com", appUser.Email,
                 "Verify Email", "Click me to verify email", link, appUser.Name + " " + appUser.Surname);
 
             TempData["Register"] = "Please verify your email";
@@ -144,7 +144,7 @@ namespace FinalProject.App.Controllers
                 mail = mail
             }, protocol: Request.Scheme);
 
-            await _mailService.SendMail("nicatsoltanli03@gmail.com", appUser.Email,
+            await _mailService.SendMail("turbobidoffical@gmail.com", appUser.Email,
             "Reset Password", "Click me for reseting password", link, appUser.Name + " " + appUser.Surname);
             return RedirectToAction("index", "home");
         }

@@ -74,50 +74,53 @@ namespace FinalProject.App.Controllers
         public async Task<IActionResult> SendMessageBot(string message)
         {
             AppUser user = (AppUser)(await _accountService.GetUser()).items;
-            SpeechSynthesizer sythesizer = new SpeechSynthesizer();
+            SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+
             if (user is not null)
             {
                 if (user.UserPricingId == 1)
                 {
                     string response = "Only Premium and Super users can use this Bot";
-                    sythesizer.Speak(response);
+                    synthesizer.Speak(response);
                     return Json(response);
                 }
                 else
                 {
                     Http = new HttpClient();
                     string response = null;
-                    // Replace [INSERT_YOUR_OWN_API_KEY] with a valid OpenAI API key
+
                     var apiKey = "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";
                     Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
 
-                    // JSON content for the API call
                     var jsonContent = new
                     {
-                        prompt = message,
-                        model = "text-davinci-003",
+                        model = "gpt-3.5-turbo",
+                        messages = new[]
+                        {
+                    new { role = "system", content = "You are a helpful assistant." },
+                    new { role = "user", content = message }
+                },
                         max_tokens = 1000
                     };
 
-                    // Make the API call
-                    var responseContent = await Http.PostAsync("https://api.openai.com/v1/completions", new StringContent(JsonConvert.SerializeObject(jsonContent), Encoding.UTF8, "application/json"));
+                    var responseContent = await Http.PostAsync("https://api.openai.com/v1/chat/completions",
+                        new StringContent(JsonConvert.SerializeObject(jsonContent), Encoding.UTF8, "application/json"));
 
-                    // Read the response as a string
                     var resContext = await responseContent.Content.ReadAsStringAsync();
-
-                    // Deserialize the response into a dynamic object
                     var data = JsonConvert.DeserializeObject<dynamic>(resContext);
-                    response = data.choices[0].text.ToString();
+                    response = data.choices[0].message.content.ToString();
+
                     return Json(response);
                 }
             }
             else
             {
                 string response = "Please Register for using Bot.";
-                sythesizer.Speak(response);
+                synthesizer.Speak(response);
                 return Json(response);
             }
         }
+
         [HttpPost]
         public async Task<IActionResult> Search(string searchText)
         {

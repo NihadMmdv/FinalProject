@@ -126,7 +126,7 @@ namespace FinalProject.App.Controllers
                 {
                     dto.StatusId = 3;
                     await _carService.UpdateAsync(carId, dto);
-                    await _emailService.SendCarMail("nicatsoltanli03@gmail.com", user.Email, "Winning Car Receipt", bookId, user.Name + " " + user.Surname, car.UpdatedAt.ToString(), car);
+                    await _emailService.SendCarMail("nyhhat@gmail.com", user.Email, "Winning Car Receipt", bookId, user.Name + " " + user.Surname, car.UpdatedAt.ToString(), car);
                 }
                 else
                 {

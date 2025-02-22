@@ -233,11 +233,11 @@ namespace FinalProject.App.Controllers
             {
                  result = await _accountService.GetUserById(dto.WinnerId);
                 AppUser winner =(AppUser)result.items;
-                await _emailService.SendMail("nicatsoltanli03@gmail.com", winner.Email,
+                await _emailService.SendMail("turbobidofficial@gmail.com", winner.Email,
                     "Auction Winner", "Congratulation.You Win " +dto.Vin +" Car.Please wait owner Report.", null, winner.Name + " " + winner.Surname);
                 result = await _accountService.GetUserById(dto.AppUserId);
                 AppUser owner = (AppUser)result.items;
-                await _emailService.SendMail("nicatsoltanli03@gmail.com", owner.Email,
+                await _emailService.SendMail("turbobidofficial@gmail.com", owner.Email,
                     "About Auction", "Your " + dto.Vin + " Car auction ended.Please look at results", null, owner.Name + " " + owner.Surname);
             }
             return Json("Ok");

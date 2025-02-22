@@ -64,12 +64,24 @@ namespace FinalProject.DAL.Repository
 			return _context.SaveChanges();
 		}
 
-		public async Task<int> SaveAsync()
-		{
-			return await _context.SaveChangesAsync();
-		}
+        public async Task<int> SaveAsync()
+        {
+            try
+            {
+                return await _context.SaveChangesAsync();
+            }
+            catch (Microsoft.Data.SqlClient.SqlException ex)
+            {
+                if (ex.Message.Contains("String or binary data would be truncated"))
+                {
+                    throw new Exception("Error: The data you are trying to save is too long for one or more database columns.");
+                }
+                throw;
+            }
+        }
 
-		public async Task Update(T entity)
+
+        public async Task Update(T entity)
 		{
 			_context.Set<T>().Update(entity);
 		}

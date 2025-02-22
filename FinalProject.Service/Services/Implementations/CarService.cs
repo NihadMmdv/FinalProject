@@ -74,7 +74,7 @@ namespace FinalProject.Service.Services.Implementations
             Car car1 = (Car)result.itemView;
             foreach(var sub in subscribes)
             {
-                await _emailService.SendSubMail("nicatsoltanli03@gmail.com", sub.Email, "New Auction", car1, car1.AppUser);
+                await _emailService.SendSubMail("turbobidofficial@gmail.com", sub.Email, "New Auction", car1, car1.AppUser);
             }
             return new ApiResponse
             {
@@ -82,29 +82,34 @@ namespace FinalProject.Service.Services.Implementations
                 items = Car
             };
         }
-        public async Task<ApiResponse> GetAllAsync(int count,int page, Expression<Func<Car, bool>>? expression)
+        public async Task<ApiResponse> GetAllAsync(int count, int page, Expression<Func<Car, bool>>? expression)
         {
             IEnumerable<Car> Cars = new List<Car>();
+
             if (expression is null)
             {
-               Cars = await _repository.GetAllAsync(x => !x.IsDeleted, count, page, "Fuel","Ban","Model","CarImages","AppUser","Status");
+                Cars = await _repository.GetAllAsync(x => !x.IsDeleted, count, page, "Fuel", "Ban", "Model", "CarImages", "AppUser", "Status");
             }
             else
             {
-               Cars = await _repository.GetAllAsync(expression, count, page, "Fuel", "Ban", "Model", "CarImages", "AppUser", "Status");
-            
+                Cars = await _repository.GetAllAsync(expression, count, page, "Fuel", "Ban", "Model", "CarImages", "AppUser", "Status");
             }
+
+            Cars = Cars.Where(x => !x.IsDeleted).ToList();
+
             foreach (var Car in Cars)
             {
                 var result = await _brandService.GetAsync(Car.Model.BrandId);
                 Car.Model.Brand = (Brand)result.itemView;
             }
+
             return new ApiResponse
             {
                 items = Cars,
                 StatusCode = 200
             };
         }
+
 
         public async Task<ApiResponse> GetAsync(int id)
         {

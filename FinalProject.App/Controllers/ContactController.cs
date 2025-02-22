@@ -68,7 +68,7 @@ namespace FinalProject.App.Controllers
                               "Email:" + dto.Email + "\n" +
                               "Number: " + dto.Phone + "\n" +
                               "Text: " + dto.Text + "\n";
-                await _emailService.SendMail("nicatsoltanli03@gmail.com", appUser.Email,
+                await _emailService.SendMail("turbobidofficial@gmail.com", appUser.Email,
                 "Auction Info",text, null, appUser.Name + " " + appUser.Surname);
             }
             return Redirect(Request.Headers["Referer"].ToString());

@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using FluentValidation.AspNetCore;
-using MicroElements.Swashbuckle.FluentValidation.AspNetCore; // Optional: Swagger Validation
+using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
 using FinalProject.DAL.Data;
 using FinalProject.Service.Services.Implementations;
 using FinalProject.Service.Services.Interfaces;
@@ -87,10 +87,20 @@ public class Program
         builder.Services.AddIdentity<AppUser, IdentityRole>()
           .AddEntityFrameworkStores<CustomDBContext>()
             .AddDefaultTokenProviders();
-
-        builder.Services.AddControllersWithViews();
-        builder.Services.AddRazorPages();
-        builder.Services.AddAutoMapper(typeof(Program));
+        builder.Services.AddControllers().AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        });
+		builder.Services.AddCors(options =>
+		{
+			options.AddPolicy("AllowAll",
+				policy => policy.AllowAnyOrigin()
+								.AllowAnyMethod()
+								.AllowAnyHeader());
+		});
+		builder.Services.AddControllersWithViews();
+        builder.Services.AddRazorPages(); 
+        builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         // Add FluentValidation
         builder.Services.AddFluentValidationAutoValidation();
@@ -107,8 +117,8 @@ public class Program
             app.UseExceptionHandler("/Home/Error");
             app.UseHsts();
         }
-
-        app.UseSerilogRequestLogging();
+		app.UseCors("AllowAll"); // <-- Apply CORS
+		app.UseSerilogRequestLogging();
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseRouting();
@@ -116,8 +126,12 @@ public class Program
 
         // Define Routes
         app.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+        app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
+            
 
         // Run Telegram Bot in the Background
         var telegramBotService = app.Services.GetRequiredService<ITelegramBotService>();

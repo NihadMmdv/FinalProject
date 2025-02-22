@@ -244,14 +244,14 @@ namespace FinalProject.App.Controllers
             AppUser winner = (AppUser)result.items;
             if (status)
             {
-                await _emailService.SendMail("nicatsoltanli03@gmail.com", winner.Email,
+                await _emailService.SendMail("nyhhat@gmail.com", winner.Email,
                     "Owner Report", "Congratulation.You Win " + dto.Vin + " Car.", null, winner.Name + " " + winner.Surname);
                 dto.StatusId = 6;
 
             }
             else
             {
-                await _emailService.SendMail("nicatsoltanli03@gmail.com", winner.Email,
+                await _emailService.SendMail("nyhhat@gmail.com", winner.Email,
                     "Owner Report", "Unfortunately." + dto.Vin + " Owner canceled auction result", null, winner.Name + " " + winner.Surname);
                 dto.StatusId = 5;
             }
@@ -260,8 +260,24 @@ namespace FinalProject.App.Controllers
         }
         public async Task<IActionResult> GetAllModel()
         {
-            var result = await _modelService.GetAllAsync(0, 0);
-            return Json(result.items);
+            try
+            {
+                var result = await _modelService.GetAllAsync(0, 0);
+                if (result == null || result.items == null)
+                    return Json(new { error = "No models found" });
+
+                var models = result.items as IEnumerable<Model>;
+                if (models == null)
+                    return Json(new { error = "Invalid data format" });
+
+                return Json(models);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "Internal Server Error", message = ex.Message });
+            }
         }
+
+
     }
 }
